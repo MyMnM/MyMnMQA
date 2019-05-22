@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Cucumber Suite]" parallel="methods">
+  <test name="Cucumeber Test">
+    <classes>
+      <class name="step_definitions.RunnerTest"/>
+    </classes>
+  </test> <!-- Cucumeber Test -->
+  <test name="Cucumeber Test(failed)" parallel="methods">
+    <classes>
+      <class name="step_definitions.RunnerTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0 1"/>
+          <include name="tearDownClass"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- step_definitions.RunnerTest -->
+    </classes>
+  </test> <!-- Cucumeber Test(failed) -->
+</suite> <!-- Failed suite [Cucumber Suite] -->

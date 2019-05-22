@@ -1,0 +1,297 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 57286595447,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I open the given website",
+            "match": {
+              "location": "homePage.i_open_the_given_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13548548,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "verify the Url",
+            "match": {
+              "location": "homePage.verify_the_Url()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3590737389,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 77,
+        "name": "Verify user is able to add new address,edit and delete it",
+        "description": "",
+        "id": "verify-multiple-scenarios-on-myaccount-page;verify-user-is-able-to-add-new-address,edit-and-delete-it;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 586272625,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 116051191,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I click on Login icon",
+            "match": {
+              "location": "homePage.i_click_on_Login_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5282733409,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "I enter username as \"mmsuk@gmail.com\" and password as \"automation@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mmsuk@gmail.com",
+                  "offset": 21
+                },
+                {
+                  "val": "automation@123",
+                  "offset": 55
+                }
+              ],
+              "location": "homePage.i_enter_username_as_and_password_as(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7073305032,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "I click on Sign in button",
+            "match": {
+              "location": "homePage.i_click_on_Sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11121200473,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "I am successfully logged in",
+            "match": {
+              "location": "homePage.i_am_successfully_logged_in()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 83446228,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "click on Account Settings",
+            "match": {
+              "location": "MyAccount.click_on_Account_Settings()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10962973813,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "My Account title is visible",
+            "match": {
+              "location": "homePage.my_Account_title_is_visible()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 421670088,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "I click on Add new address button",
+            "match": {
+              "location": "MyAccount.i_click_on_Add_new_address_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1042000684,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "I enter all the valid values in all the mandatory fields",
+            "match": {
+              "location": "MyAccount.i_enter_all_the_valid_values_in_all_the_mandatory_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3147412142,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "I click on Save button",
+            "match": {
+              "location": "MyAccount.i_click_on_Save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8078364123,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "it should display new Addresss",
+            "match": {
+              "location": "MyAccount.it_should_display_new_Addresss()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 427863097,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "i click on Edit button",
+            "match": {
+              "location": "MyAccount.i_click_on_Edit_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 369866890,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "edit the Address",
+            "match": {
+              "location": "MyAccount.edit_the_Address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3123797350,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I click on Save button",
+            "match": {
+              "location": "MyAccount.i_click_on_Save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9089387634,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "it should display the updated address",
+            "match": {
+              "location": "MyAccount.it_should_display_the_updated_address()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 124097779,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "I click on Delete Address",
+            "match": {
+              "location": "MyAccount.i_click_on_Delete_Address()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14048667040,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "it should delete the address",
+            "match": {
+              "location": "MyAccount.it_should_delete_the_address()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 57,
+            "name": "@P1"
+          },
+          {
+            "line": 57,
+            "name": "@P2"
+          },
+          {
+            "line": 57,
+            "name": "@MyAccount"
+          }
+        ]
+      }
+    ],
+    "name": "Verify multiple scenarios on MyAccount Page",
+    "description": "",
+    "id": "verify-multiple-scenarios-on-myaccount-page",
+    "keyword": "Feature",
+    "uri": "features/MyAccount.feature"
+  }
+]
