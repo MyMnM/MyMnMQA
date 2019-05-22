@@ -197,7 +197,7 @@
               
              
                  <includes>
-                 <include>step_definitions/USP1RunnerTest.java</include>
+                 <include>step_definitions/FR_PTP_RunnerTest.java</include>
                  </includes>                
             </configuration>             
 			</plugin>
