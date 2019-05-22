@@ -2,38 +2,38 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="137323" started-at="2019-05-22T06:09:46Z" finished-at="2019-05-22T06:12:04Z">
+  <suite name="Default suite" duration-ms="110215" started-at="2019-05-22T13:10:12Z" finished-at="2019-05-22T13:12:02Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:step_definitions.UKP1RunnerTest@7d0587f1]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:step_definitions.Poland_PTP_RunnerTest@67205a84]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="137323" started-at="2019-05-22T06:09:46Z" finished-at="2019-05-22T06:12:04Z">
-      <class name="step_definitions.UKP1RunnerTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:step_definitions.UKP1RunnerTest@7d0587f1]" name="setUpClass" is-config="true" duration-ms="333" started-at="2019-05-22T11:39:46Z" finished-at="2019-05-22T11:39:47Z">
+    <test name="Default test" duration-ms="110215" started-at="2019-05-22T13:10:12Z" finished-at="2019-05-22T13:12:02Z">
+      <class name="step_definitions.Poland_PTP_RunnerTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:step_definitions.Poland_PTP_RunnerTest@67205a84]" name="setUpClass" is-config="true" duration-ms="329" started-at="2019-05-22T18:40:12Z" finished-at="2019-05-22T18:40:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:step_definitions.UKP1RunnerTest@7d0587f1]" name="feature" duration-ms="136269" started-at="2019-05-22T11:39:47Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-05-22T11:42:03Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:step_definitions.Poland_PTP_RunnerTest@67205a84]" name="feature" duration-ms="108959" started-at="2019-05-22T18:40:12Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-05-22T18:42:01Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Verify multiple scenarios on MyAccount Page]]>
+                <![CDATA[Verify multiple scenarios on Checkout Page]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:step_definitions.UKP1RunnerTest@7d0587f1]" name="teardown" is-config="true" duration-ms="157" started-at="2019-05-22T11:42:03Z" finished-at="2019-05-22T11:42:03Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:step_definitions.Poland_PTP_RunnerTest@67205a84]" name="teardown" is-config="true" duration-ms="149" started-at="2019-05-22T18:42:01Z" finished-at="2019-05-22T18:42:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:step_definitions.UKP1RunnerTest@7d0587f1]" name="tearDownClass" is-config="true" duration-ms="381" started-at="2019-05-22T11:42:03Z" finished-at="2019-05-22T11:42:04Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:step_definitions.Poland_PTP_RunnerTest@67205a84]" name="tearDownClass" is-config="true" duration-ms="637" started-at="2019-05-22T18:42:01Z" finished-at="2019-05-22T18:42:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- step_definitions.UKP1RunnerTest -->
+      </class> <!-- step_definitions.Poland_PTP_RunnerTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

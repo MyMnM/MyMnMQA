@@ -34,6 +34,7 @@ public class Checkout extends GlobalUtil{
 	public String zipCode = "wc1n3ax";
 	public String zipCodeFrance = "75006";
 	public String zipCodeDutch = "1000 AA";
+	public String zipCodePoland = "62-262 Wierzyce";
 	public String usZipCode = "35006";
 	public String phoneNumber = "2234567890";
 	public String email = "asdf@gmail.com";
@@ -581,6 +582,53 @@ public class Checkout extends GlobalUtil{
 		Assert.assertTrue("Order confirmation page is not displayed." ,isWebElementPresent(driver, CheckoutOR.orderConfirmationTitle_Spain));
 		
 	}
+	
+	@When("^I enter all the mandatory fields of Ship to Section for Poland$")
+	public void i_enter_all_the_mandatory_fields_of_Ship_to_Section_for_Poland() throws Throwable {
+		executionDelay(4000);
+		inputText(CheckoutOR.firstNameField, firstName, driver);
+		inputText(CheckoutOR.lastNameField, lastName, driver);
+		inputText(CheckoutOR.addressLine1, addressLine1, driver);
+		inputText(CheckoutOR.cityField, city, driver);				
+		inputText(CheckoutOR.zipCodeField, zipCodePoland, driver);	
+		inputText(CheckoutOR.phoneNumber, phoneNumber, driver);
+		inputText(CheckoutOR.email, email, driver);
+		SelectUsingIndex(CheckoutOR.occasionDropDown, 1);
+	}
+
+	@When("^I click on Next for Poland$")
+	public void i_click_on_Next_for_Poland() throws Throwable {
+		clickOnElementUsingJS(driver, CheckoutOR.shipToNext_PolandButton);
+	}
+
+	@When("^I click on Ship method Next button for Poland$")
+	public void i_click_on_Ship_method_Next_button_for_Poland() throws Throwable {
+		executionDelay(7000);
+		clickOnElementUsingJS(driver, CheckoutOR.shipMethodNext_PolandButton);	
+	}
+
+	@When("^I enter all the mandatory valid card information and click on Next button for Poland$")
+	public void i_enter_all_the_mandatory_valid_card_information_and_click_on_Next_button_for_Poland() throws Throwable {
+		inputText(CheckoutOR.creditCardNumber, cardNumber, driver);
+		inputText(CheckoutOR.cardName, cardName, driver);
+		SelectUsingIndex(CheckoutOR.cardExpiryMonth, 4);
+		SelectUsingIndex(CheckoutOR.cardExpiryYear, 8);
+		inputText(CheckoutOR.cardCVVNumber, cardCVVNumber, driver);
+		clickOnElementUsingJS(driver, CheckoutOR.paymentNext_Poland_Button);	
+	}
+
+	@When("^I click on Place order button for Poland$")
+	public void i_click_on_Place_order_button_for_Poland() throws Throwable {
+		clickOnElementUsingJS(driver, CheckoutOR.checkoutPlaceOrder_PolandButton);
+	}
+
+	@Then("^Order gets placed successfully for Poland$")
+	public void order_gets_placed_successfully_for_Poland() throws Throwable {
+		Assert.assertTrue("Order confirmation page is not displayed." ,isWebElementPresent(driver, CheckoutOR.orderConfirmationTitle_Poland));
+		
+	}
+
+
 
 
 

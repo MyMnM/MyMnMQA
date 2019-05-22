@@ -1,403 +1,206 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/MyAccount.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/Checkout.feature");
 formatter.feature({
-  "line": 1,
-  "name": "Verify multiple scenarios on MyAccount Page",
+  "line": 2,
+  "name": "Verify multiple scenarios on Checkout Page",
   "description": "",
-  "id": "verify-multiple-scenarios-on-myaccount-page",
+  "id": "verify-multiple-scenarios-on-checkout-page",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
-  "line": 58,
-  "name": "Verify user is able to add new address,edit and delete it",
-  "description": "",
-  "id": "verify-multiple-scenarios-on-myaccount-page;verify-user-is-able-to-add-new-address,edit-and-delete-it",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 57,
-      "name": "@MyAccount"
-    },
-    {
-      "line": 57,
-      "name": "@P1"
-    },
-    {
-      "line": 57,
-      "name": "@P2"
-    }
-  ]
-});
-formatter.step({
-  "line": 59,
-  "name": "I click on Login icon",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 60,
-  "name": "I enter username as \"\u003cemail\u003e\" and password as \"\u003cpassword\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 61,
-  "name": "I click on Sign in button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 62,
-  "name": "I am successfully logged in",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 63,
-  "name": "click on Account Settings",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 64,
-  "name": "My Account title is visible",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 65,
-  "name": "I click on Add new address button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 66,
-  "name": "I enter all the valid values in all the mandatory fields",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 67,
-  "name": "I click on Save button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 68,
-  "name": "it should display new Addresss",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 69,
-  "name": "i click on Edit button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 70,
-  "name": "edit the Address",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 71,
-  "name": "I click on Save button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 72,
-  "name": "it should display the updated address",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 73,
-  "name": "I click on Delete Address",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 74,
-  "name": "it should delete the address",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 75,
-  "name": "",
-  "description": "",
-  "id": "verify-multiple-scenarios-on-myaccount-page;verify-user-is-able-to-add-new-address,edit-and-delete-it;",
-  "rows": [
-    {
-      "cells": [
-        "email",
-        "password"
-      ],
-      "line": 76,
-      "id": "verify-multiple-scenarios-on-myaccount-page;verify-user-is-able-to-add-new-address,edit-and-delete-it;;1"
-    },
-    {
-      "cells": [
-        "mmsuk@gmail.com",
-        "automation@123"
-      ],
-      "line": 77,
-      "id": "verify-multiple-scenarios-on-myaccount-page;verify-user-is-able-to-add-new-address,edit-and-delete-it;;2"
-    }
-  ],
-  "keyword": "Examples"
-});
 formatter.before({
-  "duration": 3590737389,
+  "duration": 3121549419,
   "status": "passed"
 });
 formatter.background({
-  "line": 2,
+  "line": 3,
   "name": "",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.step({
-  "line": 3,
+  "line": 4,
   "name": "I open the given website",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 4,
+  "line": 5,
   "name": "verify the Url",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 6,
+  "name": "I navigate to normal product page",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "Add to cart button is visible",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 8,
+  "name": "I click on cart button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 9,
+  "name": "I click on Proceed to Checkout button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 10,
+  "name": "it redirects to Checkout Page",
   "keyword": "Then "
 });
 formatter.match({
   "location": "homePage.i_open_the_given_website()"
 });
 formatter.result({
-  "duration": 57286595447,
+  "duration": 44535081794,
   "status": "passed"
 });
 formatter.match({
   "location": "homePage.verify_the_Url()"
 });
 formatter.result({
-  "duration": 13548548,
+  "duration": 13837159,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ProductDetailPage.i_navigate_to_normal_product_page()"
+});
+formatter.result({
+  "duration": 8533435965,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ProductDetailPage.add_to_cart_button_is_visible()"
+});
+formatter.result({
+  "duration": 18660,
+  "status": "passed"
+});
+formatter.match({
+  "location": "GlobalCart.i_click_on_cart_button()"
+});
+formatter.result({
+  "duration": 5099382970,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Checkout.i_click_on_Proceed_to_Checkout_button()"
+});
+formatter.result({
+  "duration": 15119936244,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Cart.it_redirects_to_Checkout_Page()"
+});
+formatter.result({
+  "duration": 9567394,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 77,
-  "name": "Verify user is able to add new address,edit and delete it",
+  "line": 170,
+  "name": "Verify user is able to place order if all mandatory fields are filled for Dutch",
   "description": "",
-  "id": "verify-multiple-scenarios-on-myaccount-page;verify-user-is-able-to-add-new-address,edit-and-delete-it;;2",
+  "id": "verify-multiple-scenarios-on-checkout-page;verify-user-is-able-to-place-order-if-all-mandatory-fields-are-filled-for-dutch",
   "type": "scenario",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
-      "line": 57,
-      "name": "@P1"
-    },
-    {
-      "line": 57,
-      "name": "@P2"
-    },
-    {
-      "line": 57,
-      "name": "@MyAccount"
+      "line": 169,
+      "name": "@P1Pl"
     }
   ]
 });
 formatter.step({
-  "line": 59,
-  "name": "I click on Login icon",
+  "line": 171,
+  "name": "I enter all the mandatory fields of Ship to Section for Poland",
   "keyword": "When "
 });
 formatter.step({
-  "line": 60,
-  "name": "I enter username as \"mmsuk@gmail.com\" and password as \"automation@123\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
+  "line": 172,
+  "name": "I click on Next for Poland",
   "keyword": "And "
 });
 formatter.step({
-  "line": 61,
-  "name": "I click on Sign in button",
+  "line": 173,
+  "name": "I click on Ship method Next button for Poland",
   "keyword": "And "
 });
 formatter.step({
-  "line": 62,
-  "name": "I am successfully logged in",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 63,
-  "name": "click on Account Settings",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 64,
-  "name": "My Account title is visible",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 65,
-  "name": "I click on Add new address button",
+  "line": 174,
+  "name": "I enter all the mandatory valid card information and click on Next button for Poland",
   "keyword": "When "
 });
 formatter.step({
-  "line": 66,
-  "name": "I enter all the valid values in all the mandatory fields",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 67,
-  "name": "I click on Save button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 68,
-  "name": "it should display new Addresss",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 69,
-  "name": "i click on Edit button",
+  "line": 175,
+  "name": "I select terms and conditions",
   "keyword": "When "
 });
 formatter.step({
-  "line": 70,
-  "name": "edit the Address",
+  "line": 176,
+  "name": "I click on Place order button for Poland",
   "keyword": "And "
 });
 formatter.step({
-  "line": 71,
-  "name": "I click on Save button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 72,
-  "name": "it should display the updated address",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 73,
-  "name": "I click on Delete Address",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 74,
-  "name": "it should delete the address",
+  "line": 177,
+  "name": "Order gets placed successfully for Poland",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "homePage.i_click_on_Login_icon()"
+  "location": "Checkout.i_enter_all_the_mandatory_fields_of_Ship_to_Section_for_Poland()"
 });
 formatter.result({
-  "duration": 116051191,
+  "duration": 5427604030,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "mmsuk@gmail.com",
-      "offset": 21
-    },
-    {
-      "val": "automation@123",
-      "offset": 55
-    }
-  ],
-  "location": "homePage.i_enter_username_as_and_password_as(String,String)"
+  "location": "Checkout.i_click_on_Next_for_Poland()"
 });
 formatter.result({
-  "duration": 5282733409,
+  "duration": 1218079243,
   "status": "passed"
 });
 formatter.match({
-  "location": "homePage.i_click_on_Sign_in_button()"
+  "location": "Checkout.i_click_on_Ship_method_Next_button_for_Poland()"
 });
 formatter.result({
-  "duration": 7073305032,
+  "duration": 7115050072,
   "status": "passed"
 });
 formatter.match({
-  "location": "homePage.i_am_successfully_logged_in()"
+  "location": "Checkout.i_enter_all_the_mandatory_valid_card_information_and_click_on_Next_button_for_Poland()"
 });
 formatter.result({
-  "duration": 11121200473,
+  "duration": 2461552218,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyAccount.click_on_Account_Settings()"
+  "location": "Checkout.i_select_terms_and_conditions()"
 });
 formatter.result({
-  "duration": 83446228,
+  "duration": 1428156373,
   "status": "passed"
 });
 formatter.match({
-  "location": "homePage.my_Account_title_is_visible()"
+  "location": "Checkout.i_click_on_Place_order_button_for_Poland()"
 });
 formatter.result({
-  "duration": 10962973813,
+  "duration": 109885240,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyAccount.i_click_on_Add_new_address_button()"
+  "location": "Checkout.order_gets_placed_successfully_for_Poland()"
 });
 formatter.result({
-  "duration": 421670088,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyAccount.i_enter_all_the_valid_values_in_all_the_mandatory_fields()"
-});
-formatter.result({
-  "duration": 1042000684,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyAccount.i_click_on_Save_button()"
-});
-formatter.result({
-  "duration": 3147412142,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyAccount.it_should_display_new_Addresss()"
-});
-formatter.result({
-  "duration": 8078364123,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyAccount.i_click_on_Edit_button()"
-});
-formatter.result({
-  "duration": 427863097,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyAccount.edit_the_Address()"
-});
-formatter.result({
-  "duration": 369866890,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyAccount.i_click_on_Save_button()"
-});
-formatter.result({
-  "duration": 3123797350,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyAccount.it_should_display_the_updated_address()"
-});
-formatter.result({
-  "duration": 9089387634,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyAccount.i_click_on_Delete_Address()"
-});
-formatter.result({
-  "duration": 124097779,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyAccount.it_should_delete_the_address()"
-});
-formatter.result({
-  "duration": 14048667040,
+  "duration": 13871376811,
   "status": "passed"
 });
 formatter.after({
-  "duration": 586272625,
+  "duration": 615799900,
   "status": "passed"
 });
 });

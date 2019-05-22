@@ -135,7 +135,7 @@ And I click on Place order button for Dutch
 Then Order gets placed successfully for Dutch
 
 @P1GE
-Scenario:Verify user is able to place order if all mandatory fields are filled for Dutch
+Scenario:Verify user is able to place order if all mandatory fields are filled for Germany
 When I enter all the mandatory fields of Ship to Section for German
 And I click on Next for German
 And I click on Ship method Next button for German
@@ -145,7 +145,7 @@ And I click on Place order button for German
 Then Order gets placed successfully for German
 
 @P1IT
-Scenario:Verify user is able to place order if all mandatory fields are filled for Dutch
+Scenario:Verify user is able to place order if all mandatory fields are filled for Italy
 When I enter all the mandatory fields of Ship to Section for Italy
 And I click on Next for italy
 And I click on Ship method Next button for Italy
@@ -156,7 +156,7 @@ Then Order gets placed successfully for Italy
 
 
 @P1ESP
-Scenario:Verify user is able to place order if all mandatory fields are filled for Dutch
+Scenario:Verify user is able to place order if all mandatory fields are filled for Spain
 When I enter all the mandatory fields of Ship to Section for Spain
 And I click on Next for Spain
 And I click on Ship method Next button for Spain
@@ -164,6 +164,17 @@ When I enter all the mandatory valid card information and click on Next button f
 When I select terms and conditions
 And I click on Place order button for Spain
 Then Order gets placed successfully for Spain
+
+
+@P1Pl
+Scenario:Verify user is able to place order if all mandatory fields are filled for Poland
+When I enter all the mandatory fields of Ship to Section for Poland
+And I click on Next for Poland
+And I click on Ship method Next button for Poland
+When I enter all the mandatory valid card information and click on Next button for Poland
+When I select terms and conditions
+And I click on Place order button for Poland
+Then Order gets placed successfully for Poland
 
 
 

@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>May 22, 2019 11:39:47 AM</span>
+                    <span class='label suite-start-time blue darken-3'>May 22, 2019 06:40:12 PM</span>
 				</a>
 			</li>
 			<li>
@@ -84,9 +84,7 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@P1</a></li>
-					<li><a href='#'>@P2</a></li>
-					<li><a href='#'>@MyAccount</a></li>
+					<li><a href='#'>@P1Pl</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -164,7 +162,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>18</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>14</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -183,103 +181,132 @@
 				
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Verify multiple scenarios on MyAccount Page</span>
-						<span class='test-time'>May 22, 2019 11:39:47 AM</span>
+						<span class='test-name'>Verify multiple scenarios on Checkout Page</span>
+						<span class='test-time'>May 22, 2019 06:40:12 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenariooutline node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 2m 15s+480ms</span>
+<div class='scenario node' test-id='2' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@P1Pl</span>
+	</div>
+	<span class='duration right label'>0h 1m 48s+125ms</span>
 	<div class='desc'>
-		<b>ScenarioOutline</b>
-		<span class="desc-text">Verify user is able to add new address,edit and delete it</span>
+		<b>Scenario</b>
+		<span class="desc-text">Verify user is able to place order if all mandatory fields are filled for Dutch</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node scenario pass' status='pass'>
-			<div class='category-list'>
-				<span class='category label white-text'>@P1</span>
-				<span class='category label white-text'>@P2</span>
-				<span class='category label white-text'>@MyAccount</span>
-			</div>
+		<li test-id='3' class='node given pass' status='pass'>
 			
-			<b>Scenario</b>
+			<b>Given</b>
 			
-			<span class="bdd-step-name">Verify user is able to add new address,edit and delete it</span>
+			<span class="bdd-step-name">Given I open the given website</span>
+				<div class='pre'>passed</div>
 			
-				<ul class='steps'>
-					<li test-id='4' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given I open the given website</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='5' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then verify the Url</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='6' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When I click on Login icon</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='7' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I enter username as "mmsuk@gmail.com" and password as "automation@123"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='8' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I click on Sign in button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='9' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then I am successfully logged in</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='10' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And click on Account Settings</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='11' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then My Account title is visible</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='12' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When I click on Add new address button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='13' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I enter all the valid values in all the mandatory fields</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='14' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I click on Save button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='15' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then it should display new Addresss</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='16' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When i click on Edit button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='17' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And edit the Address</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='18' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I click on Save button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='19' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then it should display the updated address</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='20' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When I click on Delete Address</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='21' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then it should delete the address</span>
-							<div class='pre'>passed</div>
-					</li>
-				</ul>
+		</li>
+		<li test-id='4' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then verify the Url</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='5' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When I navigate to normal product page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='6' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Add to cart button is visible</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='7' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When I click on cart button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='8' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When I click on Proceed to Checkout button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='9' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then it redirects to Checkout Page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='10' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When I enter all the mandatory fields of Ship to Section for Poland</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='11' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And I click on Next for Poland</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='12' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And I click on Ship method Next button for Poland</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='13' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When I enter all the mandatory valid card information and click on Next button for Poland</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='14' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When I select terms and conditions</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='15' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And I click on Place order button for Poland</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='16' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Order gets placed successfully for Poland</span>
+				<div class='pre'>passed</div>
+			
 		</li>
 	</ul>
 </div>
@@ -337,7 +364,7 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@P1</span>
+						<span class='category-name'>@P1Pl</span>
 						<span class='category-status right'>
 							<span class='label pass'>1</span>
 						</span>
@@ -360,76 +387,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 22, 2019 11:39:47 AM</td>
-										<td class='linked' test-id='3'>Verify multiple scenarios on MyAccount Page.Verify user is able to add new address,edit and delete it.Verify user is able to add new address,edit and delete it</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@P2</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 22, 2019 11:39:47 AM</td>
-										<td class='linked' test-id='3'>Verify multiple scenarios on MyAccount Page.Verify user is able to add new address,edit and delete it.Verify user is able to add new address,edit and delete it</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@MyAccount</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 22, 2019 11:39:47 AM</td>
-										<td class='linked' test-id='3'>Verify multiple scenarios on MyAccount Page.Verify user is able to add new address,edit and delete it.Verify user is able to add new address,edit and delete it</td>
+										<td>May 22, 2019 06:40:12 PM</td>
+										<td class='linked' test-id='2'>Verify multiple scenarios on Checkout Page.Verify user is able to place order if all mandatory fields are filled for Dutch</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -470,25 +429,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>18</div>
+					<div class='panel-lead'>14</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 22, 2019 11:39:47 AM</div>
+					<div class='panel-lead'>May 22, 2019 06:40:12 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 22, 2019 11:42:03 AM</div>
+			 		<div class='panel-lead'>May 22, 2019 06:42:01 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>136,341ms</div>
+					<div class='panel-lead'>109,013ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -523,19 +482,7 @@
 							<th>Others</th>
 						</tr>
 						<tr>
-							<td>@P1</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
-						<tr>
-							<td>@P2</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
-						<tr>
-							<td>@MyAccount</td>
+							<td>@P1Pl</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -579,7 +526,7 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 18,
+				passGrandChild: 14,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,

@@ -38,6 +38,7 @@ public class CheckoutOR {
 	public final static String shipToNext_German = "(//button[contains(text(),'Weiter')])[1]";
 	public final static String shipToNext_Italy = "(//button[contains(text(),'Seguente')])[1]";
 	public final static String shipToNext_Spain = "(//button[contains(text(),'Siguiente')])[1]";
+	public final static String shipToNext_Poland = "(//button[contains(text(),'Dalej')])[1]";
 	
 	public final static String shipMethodNext = "(//button[contains(text(),'Next')])[2]";
 	public final static String shipMethodNext_France = "(//button[contains(text(),'Suivant')])[2]";
@@ -45,6 +46,7 @@ public class CheckoutOR {
 	public final static String shipMethodNext_German = "(//button[contains(text(),'Weiter')])[2]";
 	public final static String shipMethodNext_Italy = "(//button[contains(text(),'Seguente')])[2]";
 	public final static String shipMethodNext_Spain = "(//button[contains(text(),'Siguiente')])[2]";
+	public final static String shipMethodNext_Poland = "(//button[contains(text(),'Dalej')])[2]";
 	
 	public final static String paymentNext = "(//button[contains(text(),'Next')])[3]";
 	public final static String paymentNext_France = "(//button[contains(text(),'Suivant')])[3]";
@@ -52,6 +54,7 @@ public class CheckoutOR {
 	public final static String paymentNext_German = "(//button[contains(text(),'Weiter')])[3]";
 	public final static String paymentNext_Italy = "(//button[contains(text(),'Seguente')])[3]";
 	public final static String paymentNext_Spain = "(//button[contains(text(),'Siguiente')])[3]";
+	public final static String paymentNext_Poland = "(//button[contains(text(),'Dalej')])[3]";
 	
 	public final static String shippingMethod_France = "(//input[@name='shippingMethod'])[1]";
 	
@@ -78,8 +81,10 @@ public class CheckoutOR {
 	public final static String checkoutPlaceOrder_France = "//button[contains(text(),'Valider la commande')]";
 	public final static String checkoutPlaceOrder_Dutch = "//button[contains(text(),'Bestelling plaatsen')]";
 	public final static String checkoutPlaceOrder_German = "//button[contains(text(),'Bestellung aufgeben')]";
-	public final static String checkoutPlaceOrder_Italy = "//button[contains(text(),'Effettua l抩rdine')]";
+	public final static String checkoutPlaceOrder_Italy = "//button[contains(text(),'Effettua l鈥檕rdine')]";
 	public final static String checkoutPlaceOrder_Spain = "//button[contains(text(),'Hacer un pedido')]";
+	
+	public final static String checkoutPlaceOrder_Poland = "//button[contains(text(),'Z艂贸偶 zam贸wienie')]";
 	
 	public final static String checkoutBillingFirstName = "//input[@data-mz-value='billingContact.firstName']";
 	public final static String checkoutBillingSummaryFirstName = "(//div[@class='mz-addresssummary'])[1]//div[1]";
@@ -102,9 +107,10 @@ public class CheckoutOR {
 	public final static String orderConfirmationTitle = "//h1[contains(text(),'Order Confirmation')]";
 	public final static String orderConfirmationTitle_France = "//h1[contains(text(),'Confirmation de commande ')]";
 	public final static String orderConfirmationTitle_Dutch = "//h1[contains(text(),'Bestelbevestiging ')]";
-	public final static String orderConfirmationTitle_German = "//h1[contains(text(),'Bestellbest鋞igung')]";
+	public final static String orderConfirmationTitle_German = "//h1[contains(text(),'Bestellbest盲tigung')]";
 	public final static String orderConfirmationTitle_Italy = "//h1[contains(text(),'Conferma')]";
-	public final static String orderConfirmationTitle_Spain = "//h1[contains(text(),'Confirmaci髇 de pedido ')]";
+	public final static String orderConfirmationTitle_Spain = "//h1[contains(text(),'Confirmaci贸n de pedido ')]";
+	public final static String orderConfirmationTitle_Poland = "//h1[contains(text(),'Potwierdzenie zam贸wienia ')]";
 	
 	public final static String checkoutOrderSummarySubTotalValue = "(//span[@class='mz-ordersummary-totalvalue col-sm-4'])[1]";
 	public final static String checkoutOrderSummaryOrderLevelDiscountValue = "//span[@class='mz-ordersummary-discountamt col-sm-4']";
@@ -277,6 +283,9 @@ public class CheckoutOR {
 	@FindBy(how=How.XPATH, using=shipToNext_Spain)	
 	public static WebElement shipToNext_SpainButton;
 	
+	@FindBy(how=How.XPATH, using=shipToNext_Poland)	
+	public static WebElement shipToNext_PolandButton;
+	
 	@FindBy(how=How.XPATH, using=shipMethodNext_France)	
 	public static WebElement shipMethodNext_FranceButton;
 	
@@ -291,6 +300,10 @@ public class CheckoutOR {
 	
 	@FindBy(how=How.XPATH, using=shipMethodNext_Spain)	
 	public static WebElement shipMethodNext_SpainButton;
+	
+	@FindBy(how=How.XPATH, using=shipMethodNext_Poland)	
+	public static WebElement shipMethodNext_PolandButton;
+	
 	
 	@FindBy(how=How.XPATH, using=paymentNext_France)	
 	public static WebElement paymentNext_France_Button;
@@ -307,6 +320,9 @@ public class CheckoutOR {
 	@FindBy(how=How.XPATH, using=paymentNext_Spain)	
 	public static WebElement paymentNext_Spain_Button;
 	
+	@FindBy(how=How.XPATH, using=paymentNext_Poland)	
+	public static WebElement paymentNext_Poland_Button;
+	
 	@FindBy(how=How.XPATH, using=checkoutPlaceOrder_France)	
 	public static WebElement checkoutPlaceOrder_FranceButton;
 	
@@ -321,6 +337,9 @@ public class CheckoutOR {
 	
 	@FindBy(how=How.XPATH, using=checkoutPlaceOrder_Spain)	
 	public static WebElement checkoutPlaceOrder_SpainButton;
+	
+	@FindBy(how=How.XPATH, using=checkoutPlaceOrder_Poland)	
+	public static WebElement checkoutPlaceOrder_PolandButton;
 	
 	@FindBy(how=How.XPATH, using=shippingMethod_France)	
 	public static WebElement shippingMethod_FranceRadioButton;
