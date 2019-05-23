@@ -14,7 +14,6 @@ pageobjects\homePageOR.class
 step_definitions\ProductDetailPageRunnerTest.class
 pageobjects\ForgotPasswordOR.class
 step_definitions\FluidPageRunnerTest.class
-step_definitions\RunnerTest.class
 UIAction\ProductListAction.class
 pageobjects\PackagingLocationOR.class
 step_definitions\Fluid.class
