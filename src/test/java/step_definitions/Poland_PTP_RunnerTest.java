@@ -38,6 +38,7 @@ import helpers.SendEmail;
 		features = "classpath:features",
 		plugin = {"pretty", "html:target2/cucumber-html-report",
 				   "json:target/cucumber.json",
+				   "rerun:target/rerun.txt",
 				   "com.cucumber.listener.ExtentCucumberFormatter:output/report.html"
 		            		
 		},
