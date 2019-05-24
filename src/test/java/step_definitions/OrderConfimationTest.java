@@ -25,6 +25,7 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.junit.Cucumber;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
+import helpers.SendEmail;
 
 
 
@@ -84,7 +85,7 @@ public class OrderConfimationTest extends AbstractTestNGCucumberTests{
         Reporter.setSystemInfo("user", System.getProperty("user.name"));
         Reporter.setSystemInfo("os", "Windows 7");
         Reporter.setTestRunnerOutput("Output");
-        
+        SendEmail.sendEmailReport();
         
        // driver.quit();
       

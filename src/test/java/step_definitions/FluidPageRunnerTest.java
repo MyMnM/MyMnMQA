@@ -25,6 +25,7 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.junit.Cucumber;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
+import helpers.SendEmail;
 
 
 
@@ -40,7 +41,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 				   "com.cucumber.listener.ExtentCucumberFormatter:output/report.html"
 		            		
 		},
-		tags = {"@Fluid2"}
+		tags = {"@Fluid"}
 		)
 public class FluidPageRunnerTest extends AbstractTestNGCucumberTests{
    /*
@@ -84,7 +85,7 @@ public class FluidPageRunnerTest extends AbstractTestNGCucumberTests{
         Reporter.setSystemInfo("user", System.getProperty("user.name"));
         Reporter.setSystemInfo("os", "Windows 7");
         Reporter.setTestRunnerOutput("Output");
-        
+        SendEmail.sendEmailReport();
         
        // driver.quit();
       

@@ -25,6 +25,7 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.junit.Cucumber;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
+import helpers.SendEmail;
 
 
 
@@ -37,6 +38,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		features = "classpath:features",
 		plugin = {"pretty", "html:target2/cucumber-html-report",
 				   "json:target/cucumber.json",
+				   "rerun:target/rerun.txt",
 				   "com.cucumber.listener.ExtentCucumberFormatter:output/report.html"
 		            		
 		},
@@ -84,6 +86,7 @@ public class MyAccountRunnerTest extends AbstractTestNGCucumberTests{
         Reporter.setSystemInfo("user", System.getProperty("user.name"));
         Reporter.setSystemInfo("os", "Windows 7");
         Reporter.setTestRunnerOutput("Output");
+        SendEmail.sendEmailReport();
         
         
        // driver.quit();
