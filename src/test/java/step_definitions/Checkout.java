@@ -624,7 +624,7 @@ public class Checkout extends GlobalUtil{
 
 	@Then("^Order gets placed successfully for Poland$")
 	public void order_gets_placed_successfully_for_Poland() throws Throwable {
-		Assert.assertFalse("Order confirmation page is not displayed." ,isWebElementPresent(driver, CheckoutOR.orderConfirmationTitle_Poland));
+		Assert.assertTrue("Order confirmation page is not displayed." ,isWebElementPresent(driver, CheckoutOR.orderConfirmationTitle_Poland));
 		
 	}
 
