@@ -18,7 +18,7 @@ Then Global Cart is visible
     And I hover mouse over the product 
     Then it displays Quick Shop button
     
-    @ProductList  @P1US
+    @P1US
     Scenario:Verify Items per page dropdown is working fine and products are listed as per option selected ie. 12,36,100 and View All
     When I select particular value from per page drop down
     Then  products are listed as per option selected
@@ -31,7 +31,7 @@ Then Global Cart is visible
     When I select High to Low sortby value
     Then products gets listed as per High to Low
     
-    @ProductList  @P1US
+    @P1US
     Scenario:Validate Sort By dropdoown is working fine and page sorts as per selected option ie:Popularity,Recency,Low to High,High to Low
     When I select Low to High sortby value
     Then products gets listed as per Low to High for US site    

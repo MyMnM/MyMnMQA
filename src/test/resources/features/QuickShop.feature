@@ -36,7 +36,7 @@ Then it displays Add To Cart Button
 When I click on Add To Cart Button
 Then it displays Global Cart
 
-@QuickShop2 @P1
+@QuickShop @P1
 Scenario:Verify Personalize button on accordion under quickshop and its functionality on accordion under quickshop
 When I navigate to Product listing
 When I click on Quick Shop button

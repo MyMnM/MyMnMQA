@@ -1,1 +1,1845 @@
-[]
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 49086793867,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I open the given website",
+            "match": {
+              "location": "homePage.i_open_the_given_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8057785,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "verify the Url",
+            "match": {
+              "location": "homePage.verify_the_Url()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3270423275,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Verify user is able to navigate to account settings after logging with valid credentials",
+        "description": "",
+        "id": "verify-multiple-scenarios-on-myaccount-page;verify-user-is-able-to-navigate-to-account-settings-after-logging-with-valid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 650835355,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 100570069,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on Login icon",
+            "match": {
+              "location": "homePage.i_click_on_Login_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5310640667,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter username as \"mmsuk@gmail.com\" and password as \"automation@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mmsuk@gmail.com",
+                  "offset": 21
+                },
+                {
+                  "val": "automation@123",
+                  "offset": 55
+                }
+              ],
+              "location": "homePage.i_enter_username_as_and_password_as(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7071694657,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on Sign in button",
+            "match": {
+              "location": "homePage.i_click_on_Sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11106038440,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am successfully logged in",
+            "match": {
+              "location": "homePage.i_am_successfully_logged_in()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 87848479,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click on Account Settings",
+            "match": {
+              "location": "MyAccount.click_on_Account_Settings()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4010579710,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "it navigates to Account settings page",
+            "match": {
+              "location": "MyAccount.it_navigates_to_Account_settings_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@P1"
+          },
+          {
+            "line": 6,
+            "name": "@MyAccount"
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 46617184799,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I open the given website",
+            "match": {
+              "location": "homePage.i_open_the_given_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10206195,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "verify the Url",
+            "match": {
+              "location": "homePage.verify_the_Url()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2153534553,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "Verify validation message displays for empty or on entering invalid details in my information and edit information",
+        "description": "",
+        "id": "verify-multiple-scenarios-on-myaccount-page;verify-validation-message-displays-for-empty-or-on-entering-invalid-details-in-my-information-and-edit-information;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 681048703,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 136850781,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I click on Login icon",
+            "match": {
+              "location": "homePage.i_click_on_Login_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 571269516,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click on Create an Account",
+            "match": {
+              "location": "homePage.i_click_on_Create_an_Account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1037579772,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I enter username as \"asdefghi@gmail.com\" password as \"automation@123\" and Re-enter password as \"automation@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "asdefghi@gmail.com",
+                  "offset": 21
+                },
+                {
+                  "val": "automation@123",
+                  "offset": 54
+                },
+                {
+                  "val": "automation@123",
+                  "offset": 96
+                }
+              ],
+              "location": "homePage.i_enter_username_as_password_as_and_Re_enter_password_as(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46710518,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click on email subscribe check box",
+            "match": {
+              "location": "homePage.i_click_on_email_subscribe_check_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5048388692,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click on Sign Up button",
+            "match": {
+              "location": "homePage.i_click_on_Sign_Up_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6044811843,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "My Account title is visible",
+            "match": {
+              "location": "homePage.my_Account_title_is_visible()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 81385830,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click on edit link",
+            "match": {
+              "location": "MyAccount.i_click_on_edit_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 536034397,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click on Save button with all fields empty",
+            "match": {
+              "location": "MyAccount.i_click_on_Save_button_with_all_fields_empty()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6037336257,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "it should display the validation error message",
+            "match": {
+              "location": "homePage.it_should_display_the_validation_error_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 119403806,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I enter email id in invalid format",
+            "match": {
+              "location": "MyAccount.i_enter_email_id_in_invalid_format()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3089848541,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I click on Save button",
+            "match": {
+              "location": "MyAccount.i_click_on_Save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6037221186,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "it should display appropriate error message",
+            "match": {
+              "location": "homePage.it_should_display_appropriate_error_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5460418922,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I update firstName as \"first\",lastName as \"last\" and email as \"newEmail@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "first",
+                  "offset": 23
+                },
+                {
+                  "val": "last",
+                  "offset": 43
+                },
+                {
+                  "val": "newEmail@gmail.com",
+                  "offset": 63
+                }
+              ],
+              "location": "MyAccount.i_update_firstName_as_lastName_as_and_email_as(String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3059084095,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I click on Save button",
+            "match": {
+              "location": "MyAccount.i_click_on_Save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15133935436,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "it should gets updated",
+            "match": {
+              "location": "MyAccount.it_should_gets_updated()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@P1"
+          },
+          {
+            "line": 19,
+            "name": "@MyAccount"
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 46770507247,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I open the given website",
+            "match": {
+              "location": "homePage.i_open_the_given_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6908005,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "verify the Url",
+            "match": {
+              "location": "homePage.verify_the_Url()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2606750638,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 55,
+        "name": "Verify validation message displays for empty or on entering invalid details in address book",
+        "description": "",
+        "id": "verify-multiple-scenarios-on-myaccount-page;verify-validation-message-displays-for-empty-or-on-entering-invalid-details-in-address-book;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 592379175,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 126089756,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I click on Login icon",
+            "match": {
+              "location": "homePage.i_click_on_Login_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5335069975,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I enter username as \"mmsuk@gmail.com\" and password as \"automation@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mmsuk@gmail.com",
+                  "offset": 21
+                },
+                {
+                  "val": "automation@123",
+                  "offset": 55
+                }
+              ],
+              "location": "homePage.i_enter_username_as_and_password_as(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7081599802,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I click on Sign in button",
+            "match": {
+              "location": "homePage.i_click_on_Sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11107434845,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I am successfully logged in",
+            "match": {
+              "location": "homePage.i_am_successfully_logged_in()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 61605399,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "click on Account Settings",
+            "match": {
+              "location": "MyAccount.click_on_Account_Settings()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9656764633,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "My Account title is visible",
+            "match": {
+              "location": "homePage.my_Account_title_is_visible()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 473580580,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I click on edit link on My Address Book",
+            "match": {
+              "location": "MyAccount.i_click_on_edit_link_on_My_Address_Book()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 746324252,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I click on Save with all mandatory fields empty",
+            "match": {
+              "location": "MyAccount.i_click_on_Save_with_all_mandatory_fields_empty()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36240431983,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "it should display all the appropriate error messages",
+            "match": {
+              "location": "MyAccount.it_should_display_all_the_appropriate_error_messages()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 42,
+            "name": "@P1"
+          },
+          {
+            "line": 42,
+            "name": "@MyAccount"
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 49853572184,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I open the given website",
+            "match": {
+              "location": "homePage.i_open_the_given_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5749207,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "verify the Url",
+            "match": {
+              "location": "homePage.verify_the_Url()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2071585184,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 77,
+        "name": "Verify user is able to add new address,edit and delete it",
+        "description": "",
+        "id": "verify-multiple-scenarios-on-myaccount-page;verify-user-is-able-to-add-new-address,edit-and-delete-it;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 601750948,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 120892580,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I click on Login icon",
+            "match": {
+              "location": "homePage.i_click_on_Login_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5283178765,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "I enter username as \"mmsuk@gmail.com\" and password as \"automation@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mmsuk@gmail.com",
+                  "offset": 21
+                },
+                {
+                  "val": "automation@123",
+                  "offset": 55
+                }
+              ],
+              "location": "homePage.i_enter_username_as_and_password_as(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7072872738,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "I click on Sign in button",
+            "match": {
+              "location": "homePage.i_click_on_Sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11129459477,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "I am successfully logged in",
+            "match": {
+              "location": "homePage.i_am_successfully_logged_in()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 47104870,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "click on Account Settings",
+            "match": {
+              "location": "MyAccount.click_on_Account_Settings()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10565491697,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "My Account title is visible",
+            "match": {
+              "location": "homePage.my_Account_title_is_visible()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 428909001,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "I click on Add new address button",
+            "match": {
+              "location": "MyAccount.i_click_on_Add_new_address_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 976716739,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "I enter all the valid values in all the mandatory fields",
+            "match": {
+              "location": "MyAccount.i_enter_all_the_valid_values_in_all_the_mandatory_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3122000062,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "I click on Save button",
+            "match": {
+              "location": "MyAccount.i_click_on_Save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8075605524,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "it should display new Addresss",
+            "match": {
+              "location": "MyAccount.it_should_display_new_Addresss()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 445348324,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "i click on Edit button",
+            "match": {
+              "location": "MyAccount.i_click_on_Edit_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 360306960,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "edit the Address",
+            "match": {
+              "location": "MyAccount.edit_the_Address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3129663806,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I click on Save button",
+            "match": {
+              "location": "MyAccount.i_click_on_Save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9084313304,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "it should display the updated address",
+            "match": {
+              "location": "MyAccount.it_should_display_the_updated_address()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 109864402,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "I click on Delete Address",
+            "match": {
+              "location": "MyAccount.i_click_on_Delete_Address()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14029214094,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "it should delete the address",
+            "match": {
+              "location": "MyAccount.it_should_delete_the_address()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 57,
+            "name": "@P1"
+          },
+          {
+            "line": 57,
+            "name": "@MyAccount"
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 50272902593,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I open the given website",
+            "match": {
+              "location": "homePage.i_open_the_given_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5798657,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "verify the Url",
+            "match": {
+              "location": "homePage.verify_the_Url()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2144078186,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 98,
+        "name": "Verify change pasword is working",
+        "description": "",
+        "id": "verify-multiple-scenarios-on-myaccount-page;verify-change-pasword-is-working;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 599632705,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 118658954,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "I click on Login icon",
+            "match": {
+              "location": "homePage.i_click_on_Login_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 570133731,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "I click on Create an Account",
+            "match": {
+              "location": "homePage.i_click_on_Create_an_Account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1001302792,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "I enter username as \"asdefghi@gmail.com\" password as \"automation@123\" and Re-enter password as \"automation@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "asdefghi@gmail.com",
+                  "offset": 21
+                },
+                {
+                  "val": "automation@123",
+                  "offset": 54
+                },
+                {
+                  "val": "automation@123",
+                  "offset": 96
+                }
+              ],
+              "location": "homePage.i_enter_username_as_password_as_and_Re_enter_password_as(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 48339554,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "I click on email subscribe check box",
+            "match": {
+              "location": "homePage.i_click_on_email_subscribe_check_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5050894445,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "I click on Sign Up button",
+            "match": {
+              "location": "homePage.i_click_on_Sign_Up_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6039049264,
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "My Account title is visible",
+            "match": {
+              "location": "homePage.my_Account_title_is_visible()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 130025814,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "I click on Change Password",
+            "match": {
+              "location": "MyAccount.i_click_on_Change_Password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 391424395,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "I change the old password as \"automation@123\" with  new passowrd as \"newPass\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "automation@123",
+                  "offset": 30
+                },
+                {
+                  "val": "newPass",
+                  "offset": 69
+                }
+              ],
+              "location": "MyAccount.i_change_the_old_password_as_with_new_passowrd_as(String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3074289357,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "I click on Save button",
+            "match": {
+              "location": "MyAccount.i_click_on_Save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18038,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "it should display password change success message",
+            "match": {
+              "location": "MyAccount.it_should_display_password_change_success_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5652771973,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "I logout of the application",
+            "match": {
+              "location": "MyAccount.i_logout_of_the_application()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8934680599,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "I log in again using new password",
+            "match": {
+              "location": "MyAccount.i_log_in_again_using_new_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15566730112,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "I am successfully logged in",
+            "match": {
+              "location": "homePage.i_am_successfully_logged_in()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 80,
+            "name": "@P1"
+          },
+          {
+            "line": 80,
+            "name": "@MyAccount"
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 44010966599,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I open the given website",
+            "match": {
+              "location": "homePage.i_open_the_given_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4647322,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "verify the Url",
+            "match": {
+              "location": "homePage.verify_the_Url()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2542813958,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 113,
+        "name": "Verify on clicking detail link in recent order it opens detail for that particular order",
+        "description": "",
+        "id": "verify-multiple-scenarios-on-myaccount-page;verify-on-clicking-detail-link-in-recent-order-it-opens-detail-for-that-particular-order;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 619617465,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 103405486,
+              "status": "passed"
+            },
+            "line": 103,
+            "name": "I click on Login icon",
+            "match": {
+              "location": "homePage.i_click_on_Login_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5293562232,
+              "status": "passed"
+            },
+            "line": 104,
+            "name": "I enter username as \"mmsuk@gmail.com\" and password as \"automation@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mmsuk@gmail.com",
+                  "offset": 21
+                },
+                {
+                  "val": "automation@123",
+                  "offset": 55
+                }
+              ],
+              "location": "homePage.i_enter_username_as_and_password_as(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7066999129,
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "I click on Sign in button",
+            "match": {
+              "location": "homePage.i_click_on_Sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11139403184,
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "I am successfully logged in",
+            "match": {
+              "location": "homePage.i_am_successfully_logged_in()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 50869254,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "click on Account Settings",
+            "match": {
+              "location": "MyAccount.click_on_Account_Settings()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4007163961,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "it navigates to Account settings page",
+            "match": {
+              "location": "MyAccount.it_navigates_to_Account_settings_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5057627978,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "I click on Order Details",
+            "match": {
+              "location": "MyAccount.i_click_on_Order_Details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6035532438,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "it opens detail for that particular order",
+            "match": {
+              "location": "MyAccount.it_opens_detail_for_that_particular_order()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 101,
+            "name": "@P1"
+          },
+          {
+            "line": 101,
+            "name": "@MyAccount"
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 47908363190,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I open the given website",
+            "match": {
+              "location": "homePage.i_open_the_given_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4700193,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "verify the Url",
+            "match": {
+              "location": "homePage.verify_the_Url()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2521711140,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 129,
+        "name": "Verify on clicking product name in detail section of order it redirects to product page",
+        "description": "",
+        "id": "verify-multiple-scenarios-on-myaccount-page;verify-on-clicking-product-name-in-detail-section-of-order-it-redirects-to-product-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 613463954,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 91343534,
+              "status": "passed"
+            },
+            "line": 117,
+            "name": "I click on Login icon",
+            "match": {
+              "location": "homePage.i_click_on_Login_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5278948498,
+              "status": "passed"
+            },
+            "line": 118,
+            "name": "I enter username as \"mmsuk@gmail.com\" and password as \"automation@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mmsuk@gmail.com",
+                  "offset": 21
+                },
+                {
+                  "val": "automation@123",
+                  "offset": 55
+                }
+              ],
+              "location": "homePage.i_enter_username_as_and_password_as(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7066742863,
+              "status": "passed"
+            },
+            "line": 119,
+            "name": "I click on Sign in button",
+            "match": {
+              "location": "homePage.i_click_on_Sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11134725695,
+              "status": "passed"
+            },
+            "line": 120,
+            "name": "I am successfully logged in",
+            "match": {
+              "location": "homePage.i_am_successfully_logged_in()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 61997575,
+              "status": "passed"
+            },
+            "line": 121,
+            "name": "click on Account Settings",
+            "match": {
+              "location": "MyAccount.click_on_Account_Settings()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4424261056,
+              "status": "passed"
+            },
+            "line": 122,
+            "name": "it navigates to Account settings page",
+            "match": {
+              "location": "MyAccount.it_navigates_to_Account_settings_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5077811781,
+              "status": "passed"
+            },
+            "line": 123,
+            "name": "I click on Order Details",
+            "match": {
+              "location": "MyAccount.i_click_on_Order_Details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 118143621,
+              "status": "passed"
+            },
+            "line": 124,
+            "name": "i click on product name in detail section",
+            "match": {
+              "location": "MyAccount.i_click_on_product_name_in_detail_section()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12890152080,
+              "status": "passed"
+            },
+            "line": 125,
+            "name": "it redirects to specific Product page",
+            "match": {
+              "location": "MyAccount.it_redirects_to_specific_Product_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 115,
+            "name": "@P1"
+          },
+          {
+            "line": 115,
+            "name": "@MyAccount"
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 54807984388,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I open the given website",
+            "match": {
+              "location": "homePage.i_open_the_given_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4956460,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "verify the Url",
+            "match": {
+              "location": "homePage.verify_the_Url()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2657151209,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 152,
+        "name": "Verify save design is working and user is able to save designs for customized products",
+        "description": "",
+        "id": "verify-multiple-scenarios-on-myaccount-page;verify-save-design-is-working-and-user-is-able-to-save-designs-for-customized-products;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 604386391,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 112579773,
+              "status": "passed"
+            },
+            "line": 134,
+            "name": "I click on Login icon",
+            "match": {
+              "location": "homePage.i_click_on_Login_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5299537538,
+              "status": "passed"
+            },
+            "line": 135,
+            "name": "I enter username as \"mmsuk@gmail.com\" and password as \"automation@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mmsuk@gmail.com",
+                  "offset": 21
+                },
+                {
+                  "val": "automation@123",
+                  "offset": 55
+                }
+              ],
+              "location": "homePage.i_enter_username_as_and_password_as(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7069413136,
+              "status": "passed"
+            },
+            "line": 136,
+            "name": "I click on Sign in button",
+            "match": {
+              "location": "homePage.i_click_on_Sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11114378304,
+              "status": "passed"
+            },
+            "line": 137,
+            "name": "I am successfully logged in",
+            "match": {
+              "location": "homePage.i_am_successfully_logged_in()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3364059526,
+              "status": "passed"
+            },
+            "line": 138,
+            "name": "I navigate to customised product",
+            "match": {
+              "location": "productList.i_navigate_to_customised_product()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6156843628,
+              "status": "passed"
+            },
+            "line": 139,
+            "name": "I click on Personalize button",
+            "match": {
+              "location": "Cart.i_click_on_Personalize_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11149563351,
+              "status": "passed"
+            },
+            "line": 140,
+            "name": "I close the pop up window",
+            "match": {
+              "location": "Cart.i_close_the_pop_up_window()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 132137836,
+              "status": "passed"
+            },
+            "line": 141,
+            "name": "I select a color of the product",
+            "match": {
+              "location": "Cart.i_select_a_color_of_the_product()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 80735833,
+              "status": "passed"
+            },
+            "line": 142,
+            "name": "I click on Save Design button",
+            "match": {
+              "location": "Fluid.i_click_on_Save_Design_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2404095602,
+              "status": "passed"
+            },
+            "line": 143,
+            "name": "I click on Save To Account",
+            "match": {
+              "location": "Fluid.i_click_on_Save_To_Account()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10009704858,
+              "status": "passed"
+            },
+            "line": 144,
+            "name": "the design gets saved successfully.",
+            "match": {
+              "location": "Fluid.the_design_gets_saved_successfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 94297755,
+              "status": "passed"
+            },
+            "line": 145,
+            "name": "I click on My Account icon",
+            "match": {
+              "location": "MyAccount.i_click_on_My_Account_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7079178330,
+              "status": "passed"
+            },
+            "line": 146,
+            "name": "I click on Saved Design",
+            "match": {
+              "location": "MyAccount.i_click_on_Saved_Design()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11745642844,
+              "status": "passed"
+            },
+            "line": 147,
+            "name": "saved design should be present in saved designs panel",
+            "match": {
+              "location": "MyAccount.saved_design_should_be_present_in_saved_designs_panel()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 132,
+            "name": "@P1"
+          },
+          {
+            "line": 132,
+            "name": "@MyAccount"
+          }
+        ]
+      }
+    ],
+    "name": "Verify multiple scenarios on MyAccount Page",
+    "description": "",
+    "id": "verify-multiple-scenarios-on-myaccount-page",
+    "keyword": "Feature",
+    "uri": "features/MyAccount.feature"
+  }
+]
