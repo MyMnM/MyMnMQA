@@ -63,7 +63,7 @@ And I click on Ship method Next button
 When I enter all the mandatory valid information and click on Next button
 Then it navigates to Complete Your Order Section
 
-@Checkout @P1 @P1US
+@Checkout
 Scenario:Verify user is able to check save credit card information checkbox
 When I enter all the mandatory fields of Ship to Section
 And I click on Next
