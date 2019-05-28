@@ -78,7 +78,9 @@ public class QuickShop extends GlobalUtil{
 
 	@Then("^it displays Quantity field$")
 	public void it_displays_Quantity_field() throws Throwable {
-	   isWebElementPresent(driver, QuickShopOR.quantityLabel);
+		Assert.assertTrue("quantity label is not present", isWebElementPresent(driver, QuickShopOR.quantityLabel));	    
+		
+	   //isWebElementPresent(driver, QuickShopOR.quantityLabel);
 	}
 	
 	@When("^I click on Plus icon$")
@@ -138,7 +140,8 @@ public class QuickShop extends GlobalUtil{
 	
 	@Then("^it displays Personalize button$")
 	public void it_displays_Personalize_button() throws Throwable {
-		isWebElementPresent(driver, QuickShopOR.personalizeProduct);
+		Assert.assertTrue("Accordion is not present", isWebElementPresent(driver, QuickShopOR.personalizeProduct));	    
+		//isWebElementPresent(driver, QuickShopOR.personalizeProduct);
 	}
 
 	@When("^i click on Personalize button$")
