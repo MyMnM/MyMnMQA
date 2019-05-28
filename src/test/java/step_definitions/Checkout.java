@@ -364,7 +364,7 @@ public class Checkout extends GlobalUtil{
 	
 	@When("^I click on Ship method Next button for France$")
 	public void i_click_on_Ship_method_Next_button_for_France() throws Throwable {
-		executionDelay(7000);
+		executionDelay(10000);
 		clickOnElementUsingJS(driver, CheckoutOR.shippingMethod_FranceRadioButton);
 		executionDelay(4000);
 		clickOnElementUsingJS(driver, CheckoutOR.shipMethodNext_FranceButton);
@@ -486,6 +486,7 @@ public class Checkout extends GlobalUtil{
 
 	@Then("^Order gets placed successfully for German$")
 	public void order_gets_placed_successfully_for_German() throws Throwable {
+		executionDelay(3000);
 		Assert.assertTrue("Order confirmation page is not displayed." ,isWebElementPresent(driver, CheckoutOR.orderConfirmationTitle_German));
 		executionDelay(3000);
 	}

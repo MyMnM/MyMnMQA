@@ -12,7 +12,8 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import helpers.ConfigReader;
 import helpers.GlobalUtil;
-
+import pageobjects.CartOR;
+import pageobjects.ProductDetailPageOR;
 import pageobjects.homePageOR;
 import pageobjects.productListOR;
 
@@ -46,7 +47,8 @@ public class productList extends GlobalUtil{
 	@Then("^it redirects to product detail page$")
 	public void it_redirects_to_product_detail_page() throws Throwable {
 	    executionDelay(3000);
-		isWebElementPresent(driver, productListOR.breadCrumbs);
+	    Assert.assertTrue("bread crumbs is not coming" ,isWebElementPresent(driver, productListOR.breadCrumbs));		
+		//isWebElementPresent(driver, productListOR.breadCrumbs);
 	}
 	@Given("^I click on product image$")
 	public void i_click_on_product_image() throws Throwable {
@@ -60,7 +62,8 @@ public class productList extends GlobalUtil{
 
 	@Then("^it displays Quick Shop button$")
 	public void it_displays_Quick_Shop_button() throws Throwable {
-	    isWebElementPresent(driver, productListOR.quickShop);
+		Assert.assertTrue("Quick Shop is not present" ,isWebElementPresent(driver, productListOR.quickShop));	
+		//isWebElementPresent(driver, productListOR.quickShop);
 	}
 	
 
@@ -204,7 +207,8 @@ public class productList extends GlobalUtil{
 
 	@Then("^it shows Personalize button$")
 	public void it_shows_Personalize_button() throws Throwable {
-	   isWebElementPresent(driver, productListOR.personalize);
+		Assert.assertTrue("personlaise is not coming" ,isWebElementPresent(driver, productListOR.personalize));				
+		//isWebElementPresent(driver, productListOR.personalize);
 	}
 
 	@When("^I navigate to non customised product$")
@@ -214,7 +218,8 @@ public class productList extends GlobalUtil{
 
 	@Then("^it shows Add to cart button$")
 	public void it_shows_Add_to_cart_button() throws Throwable {
-		isWebElementPresent(driver, productListOR.addToCart);
+		 Assert.assertTrue("add to cart is not coming" ,isWebElementPresent(driver, productListOR.addToCart));					
+		//isWebElementPresent(driver, productListOR.addToCart);
 	}
 	
 	

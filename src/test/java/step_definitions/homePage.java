@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -79,7 +80,7 @@ public class homePage extends GlobalUtil{
 	@Then("^give auto suggestions for what user types$")
 	public void give_auto_suggestions_for_what_user_types() throws Throwable {
 		highlight(homePageOR.searchTermResults, driver);
-		isWebElementPresent(driver, homePageOR.searchResults);
+		Assert.assertTrue(isWebElementPresent(driver, homePageOR.searchResults), "Auto Suggestion is not coming");
 		executionDelay(5000);
 	}
 	
@@ -106,8 +107,8 @@ public class homePage extends GlobalUtil{
 
 	@Then("^it opens new Shopper Window$")
 	public void it_opens_new_Shopper_Window() throws Throwable {
-		//executionDelay(5000);
-		isWebElementPresent(driver, homePageOR.login);
+		//executionDelay(5000);		
+		Assert.assertTrue(isWebElementPresent(driver, homePageOR.login), "New Shpper window is not opened");
 	}
 	
 	@When("^I hover on the cart icon$")
@@ -119,7 +120,8 @@ public class homePage extends GlobalUtil{
 	@Then("^it shows the cart contents$")
 	public void it_shows_the_cart_contents() throws Throwable {
 		//executionDelay(5000);
-		isWebElementPresent(driver, homePageOR.cartContent);
+		//isWebElementPresent(driver, homePageOR.cartContent);
+		Assert.assertTrue(isWebElementPresent(driver, homePageOR.cartContent), "Cart content is not coming");
 	}
 	
 	@When("^I click on Design your own button$")
@@ -343,8 +345,9 @@ public class homePage extends GlobalUtil{
 
 	@Then("^I am successfully logged in$")
 	public void i_am_successfully_logged_in() throws Throwable {		
-		clickOnElementUsingJS(driver, homePageOR.myAccountField);		
-		isWebElementPresent(driver,homePageOR.signOut);
+		clickOnElementUsingJS(driver, homePageOR.myAccountField);
+		Assert.assertTrue(isWebElementPresent(driver,homePageOR.signOut), "Sign Out is not present");
+		//isWebElementPresent(driver,homePageOR.signOut);
 		executionDelay(5000);
 	}
 	
@@ -376,7 +379,8 @@ public class homePage extends GlobalUtil{
 
 	@Then("^My Account title is visible$")
 	public void my_Account_title_is_visible() throws Throwable {
-		isWebElementPresent(driver, homePageOR.myAccount);
+		Assert.assertTrue(isWebElementPresent(driver, homePageOR.myAccount), "My Account title is not visible");
+		//isWebElementPresent(driver, homePageOR.myAccount);
 	}
 	
 	@When("^I click on Forgot your Password$")
@@ -386,12 +390,14 @@ public class homePage extends GlobalUtil{
 
 	@Then("^it redirects to page having Forgot your password heading$")
 	public void it_redirects_to_page_having_Forgot_your_password_heading() throws Throwable {
-	   isWebElementPresent(driver, homePageOR.forgotPasswordTitle);
+		Assert.assertTrue(isWebElementPresent(driver, homePageOR.forgotPasswordTitle), "Forgot password title is not visible");
+	    //isWebElementPresent(driver, homePageOR.forgotPasswordTitle);
 	}
 	
 	@Then("^it should display the validation error message$")
-	public void it_should_display_the_validation_error_message() throws Throwable {		
-		isWebElementPresent(driver, homePageOR.emptyErrorMessage);
+	public void it_should_display_the_validation_error_message() throws Throwable {	
+		Assert.assertTrue(isWebElementPresent(driver, homePageOR.emptyErrorMessage), "Empty error message is not coming");		   
+		//isWebElementPresent(driver, homePageOR.emptyErrorMessage);
 	}
 
 	@When("^I enter email id in wrong format$")
@@ -401,7 +407,8 @@ public class homePage extends GlobalUtil{
 
 	@Then("^it should display appropriate error message$")
 	public void it_should_display_appropriate_error_message() throws Throwable {		
-		isWebElementPresent(driver, homePageOR.wrongFormatErrorMessage);
+		Assert.assertTrue(isWebElementPresent(driver, homePageOR.wrongFormatErrorMessage), "Wrong format error message is not coming");
+		//isWebElementPresent(driver, homePageOR.wrongFormatErrorMessage);
 		
 	}
 
@@ -415,8 +422,9 @@ public class homePage extends GlobalUtil{
 	public void appropriate_error_message_should_be_displayed() throws Throwable {		
 		String value = "'Login as "+ConfigReader.getValue("validEmailId")+ " failed. Please try again.'";
 		String path = "//span[contains(text(),"+value+")]";
-		System.out.println("path "+path);	
-		isWebElementPresent(driver, path);	
+		System.out.println("path "+path);
+		Assert.assertTrue(isWebElementPresent(driver, path), "error message is not coming");
+		//isWebElementPresent(driver, path);	
 	}
 
 	@When("^I enter correct password for invalid email id$")
@@ -431,7 +439,8 @@ public class homePage extends GlobalUtil{
 		String path = "//span[contains(text(),"+value+")]";
 		System.out.println("path "+path);
 		//WebElement element = driver.findElement(By.xpath("//span[contains(text(),\" + value + \")]"));
-		isWebElementPresent(driver, path);
+		Assert.assertTrue(isWebElementPresent(driver, path), "Wrong format error message is not coming");		
+		//isWebElementPresent(driver, path);
 		
 	}
 	
@@ -448,7 +457,8 @@ public class homePage extends GlobalUtil{
 	@Then("^it logged out successfully$")
 	public void it_logged_out_successfully() throws Throwable {
 		clickOnElementUsingJS(driver, homePageOR.loginIcon);
-		isWebElementPresent(driver, homePageOR.newShopper);
+		Assert.assertTrue(isWebElementPresent(driver, homePageOR.newShopper), "New shopper window is not coming");
+		//isWebElementPresent(driver, homePageOR.newShopper);
 		executionDelay(5000);
 	}
 
