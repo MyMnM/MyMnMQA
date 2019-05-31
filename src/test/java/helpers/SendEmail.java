@@ -66,16 +66,16 @@ public class SendEmail
      			message.setFrom(new InternetAddress("vibhav.gupta116@gmail.com"));
       
      			// Set the recipient address
-     			message.setRecipients(Message.RecipientType.TO,InternetAddress.parse("vibhav.gupta116@gmail.com,qalancer7@gmal.com"));
+     			message.setRecipients(Message.RecipientType.TO,InternetAddress.parse("vibhav.gupta116@gmail.com,guptavibhav066@gmail.com"));
                  
                              // Add the subject link
-     			message.setSubject("Testing Subject");
+     			message.setSubject("UK testcases report");
       
      			// Create object to add multimedia type content
      			BodyPart messageBodyPart1 = new MimeBodyPart();
       
      			// Set the body of email
-     			messageBodyPart1.setText("This is message body");
+     			messageBodyPart1.setText("Result");
       
      			// Create another object to add another content
      			MimeBodyPart messageBodyPart2 = new MimeBodyPart();
