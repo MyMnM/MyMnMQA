@@ -83,7 +83,8 @@ public class MyAccount extends GlobalUtil{
 	@When("^I click on Save button$")
 	public void i_click_on_Save_button() throws Throwable {
 		clickOnElementUsingJS(driver, MyAccountOR.saveButton);
-		executionDelay(3000);
+		System.out.println("clicked save");
+		executionDelay(4000);
 	}
 	
 	@When("^I update firstName as \"([^\"]*)\",lastName as \"([^\"]*)\" and email as \"([^\"]*)\"$")

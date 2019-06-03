@@ -412,6 +412,7 @@ public class homePage extends GlobalUtil{
 	@When("^I enter email id in wrong format$")
 	public void i_enter_email_id_in_wrong_format() throws Throwable {
 	   inputText(homePageOR.login_username, wrongFormatEmailId, driver);
+	   executionDelay(4000);
 	}
 
 	@Then("^it should display appropriate error message$")

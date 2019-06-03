@@ -33,7 +33,7 @@ public class MyAccountOR {
 	public final static String newPassword = "(//input[@class='mz-accountsettings-password'])[2]";
 	public final static String confirmPassword = "//input[@class='mz-accountsettings-confirmpassword']";
 	public final static String passwordChangeSuccessMessage = "//div[@data-mz-validationmessage-for='passwordChanged']";
-	public final static String orderDetails = "//dl[@class='mz-propertylist mz-propertylist-order detail-list']";
+	public final static String orderDetails = "(//dl[@class='mz-propertylist mz-propertylist-order detail-list'])[1]";
 	public final static String orderListing = "//div[@class='mz-orderlisting-items mz-l-formfieldgroup order-details']";
 	public final static String detailsOrderName = "//a[@class='mz-itemlisting-title col-xs-9 col-sm-7 detail-data']";
 	public final static String savedDesignPersonalize = "//a[contains(text(),'Personalize')]";
