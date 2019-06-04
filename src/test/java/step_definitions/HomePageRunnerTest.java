@@ -40,7 +40,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 				   "com.cucumber.listener.ExtentCucumberFormatter:output/report.html"
 		            		
 		},
-		tags = {"@HomePage2"}
+		tags = {"@HomePage1"}
 		)
 public class HomePageRunnerTest extends AbstractTestNGCucumberTests{
    /*
