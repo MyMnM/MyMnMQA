@@ -1,403 +1,145 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/MyAccount.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/ProductList.feature");
 formatter.feature({
-  "line": 1,
-  "name": "Verify multiple scenarios on MyAccount Page",
+  "line": 2,
+  "name": "Verify multiple scenarios on Product List page",
   "description": "",
-  "id": "verify-multiple-scenarios-on-myaccount-page",
+  "id": "verify-multiple-scenarios-on-product-list-page",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
-  "line": 58,
-  "name": "Verify user is able to add new address,edit and delete it",
-  "description": "",
-  "id": "verify-multiple-scenarios-on-myaccount-page;verify-user-is-able-to-add-new-address,edit-and-delete-it",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 57,
-      "name": "@MyAccount"
-    },
-    {
-      "line": 57,
-      "name": "@P1"
-    },
-    {
-      "line": 57,
-      "name": "@P2"
-    }
-  ]
-});
-formatter.step({
-  "line": 59,
-  "name": "I click on Login icon",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 60,
-  "name": "I enter username as \"\u003cemail\u003e\" and password as \"\u003cpassword\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 61,
-  "name": "I click on Sign in button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 62,
-  "name": "I am successfully logged in",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 63,
-  "name": "click on Account Settings",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 64,
-  "name": "My Account title is visible",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 65,
-  "name": "I click on Add new address button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 66,
-  "name": "I enter all the valid values in all the mandatory fields",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 67,
-  "name": "I click on Save button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 68,
-  "name": "it should display new Addresss",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 69,
-  "name": "i click on Edit button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 70,
-  "name": "edit the Address",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 71,
-  "name": "I click on Save button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 72,
-  "name": "it should display the updated address",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 73,
-  "name": "I click on Delete Address",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 74,
-  "name": "it should delete the address",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 75,
-  "name": "",
-  "description": "",
-  "id": "verify-multiple-scenarios-on-myaccount-page;verify-user-is-able-to-add-new-address,edit-and-delete-it;",
-  "rows": [
-    {
-      "cells": [
-        "email",
-        "password"
-      ],
-      "line": 76,
-      "id": "verify-multiple-scenarios-on-myaccount-page;verify-user-is-able-to-add-new-address,edit-and-delete-it;;1"
-    },
-    {
-      "cells": [
-        "mmsuk@gmail.com",
-        "automation@123"
-      ],
-      "line": 77,
-      "id": "verify-multiple-scenarios-on-myaccount-page;verify-user-is-able-to-add-new-address,edit-and-delete-it;;2"
-    }
-  ],
-  "keyword": "Examples"
-});
 formatter.before({
-  "duration": 3590737389,
+  "duration": 3072517261,
   "status": "passed"
 });
 formatter.background({
-  "line": 2,
+  "line": 3,
   "name": "",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.step({
-  "line": 3,
+  "line": 4,
   "name": "I open the given website",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 4,
+  "line": 5,
   "name": "verify the Url",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 6,
+  "name": "I navigate to product List page",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "Global Cart is visible",
   "keyword": "Then "
 });
 formatter.match({
   "location": "homePage.i_open_the_given_website()"
 });
 formatter.result({
-  "duration": 57286595447,
+  "duration": 33139679045,
   "status": "passed"
 });
 formatter.match({
   "location": "homePage.verify_the_Url()"
 });
 formatter.result({
-  "duration": 13548548,
+  "duration": 13408907,
+  "status": "passed"
+});
+formatter.match({
+  "location": "productList.i_navigate_to_product_List_page()"
+});
+formatter.result({
+  "duration": 9879036511,
+  "status": "passed"
+});
+formatter.match({
+  "location": "QuickShop.global_Cart_is_visible()"
+});
+formatter.result({
+  "duration": 6111557194,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 77,
-  "name": "Verify user is able to add new address,edit and delete it",
+  "line": 35,
+  "name": "Validate Sort By dropdoown is working fine and page sorts as per selected option ie:Popularity,Recency,Low to High,High to Low",
   "description": "",
-  "id": "verify-multiple-scenarios-on-myaccount-page;verify-user-is-able-to-add-new-address,edit-and-delete-it;;2",
+  "id": "verify-multiple-scenarios-on-product-list-page;validate-sort-by-dropdoown-is-working-fine-and-page-sorts-as-per-selected-option-ie:popularity,recency,low-to-high,high-to-low",
   "type": "scenario",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
-      "line": 57,
-      "name": "@P1"
+      "line": 34,
+      "name": "@ProductList"
     },
     {
-      "line": 57,
-      "name": "@P2"
+      "line": 34,
+      "name": "@P1US"
     },
     {
-      "line": 57,
-      "name": "@MyAccount"
+      "line": 34,
+      "name": "@P1USLive"
     }
   ]
 });
 formatter.step({
-  "line": 59,
-  "name": "I click on Login icon",
+  "line": 36,
+  "name": "I select Low to High sortby value",
   "keyword": "When "
 });
 formatter.step({
-  "line": 60,
-  "name": "I enter username as \"mmsuk@gmail.com\" and password as \"automation@123\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 61,
-  "name": "I click on Sign in button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 62,
-  "name": "I am successfully logged in",
+  "line": 37,
+  "name": "products gets listed as per Low to High for US site",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 63,
-  "name": "click on Account Settings",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 64,
-  "name": "My Account title is visible",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 65,
-  "name": "I click on Add new address button",
+  "line": 38,
+  "name": "I select High to Low sortby value",
   "keyword": "When "
 });
 formatter.step({
-  "line": 66,
-  "name": "I enter all the valid values in all the mandatory fields",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 67,
-  "name": "I click on Save button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 68,
-  "name": "it should display new Addresss",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 69,
-  "name": "i click on Edit button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 70,
-  "name": "edit the Address",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 71,
-  "name": "I click on Save button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 72,
-  "name": "it should display the updated address",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 73,
-  "name": "I click on Delete Address",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 74,
-  "name": "it should delete the address",
+  "line": 39,
+  "name": "products gets listed as per High to Low for US site",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "homePage.i_click_on_Login_icon()"
+  "location": "productList.i_select_Low_to_High_sortby_value()"
 });
 formatter.result({
-  "duration": 116051191,
+  "duration": 15092228650,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "mmsuk@gmail.com",
-      "offset": 21
-    },
-    {
-      "val": "automation@123",
-      "offset": 55
-    }
-  ],
-  "location": "homePage.i_enter_username_as_and_password_as(String,String)"
+  "location": "productList.products_gets_listed_as_per_Low_to_High_for_US_site()"
 });
 formatter.result({
-  "duration": 5282733409,
+  "duration": 4071055546,
   "status": "passed"
 });
 formatter.match({
-  "location": "homePage.i_click_on_Sign_in_button()"
+  "location": "productList.i_select_High_to_Low_sortby_value()"
 });
 formatter.result({
-  "duration": 7073305032,
+  "duration": 15225451265,
   "status": "passed"
 });
 formatter.match({
-  "location": "homePage.i_am_successfully_logged_in()"
+  "location": "productList.products_gets_listed_as_per_High_to_Low_for_US_site()"
 });
 formatter.result({
-  "duration": 11121200473,
-  "status": "passed"
+  "duration": 4085736144,
+  "error_message": "java.lang.AssertionError: Products are not filtered as per Low to High\r\n\tat org.junit.Assert.fail(Assert.java:93)\r\n\tat org.junit.Assert.assertTrue(Assert.java:43)\r\n\tat step_definitions.productList.products_gets_listed_as_per_High_to_Low_for_US_site(productList.java:244)\r\n\tat ✽.Then products gets listed as per High to Low for US site(features/ProductList.feature:39)\r\n",
+  "status": "failed"
 });
-formatter.match({
-  "location": "MyAccount.click_on_Account_Settings()"
-});
-formatter.result({
-  "duration": 83446228,
-  "status": "passed"
-});
-formatter.match({
-  "location": "homePage.my_Account_title_is_visible()"
-});
-formatter.result({
-  "duration": 10962973813,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyAccount.i_click_on_Add_new_address_button()"
-});
-formatter.result({
-  "duration": 421670088,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyAccount.i_enter_all_the_valid_values_in_all_the_mandatory_fields()"
-});
-formatter.result({
-  "duration": 1042000684,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyAccount.i_click_on_Save_button()"
-});
-formatter.result({
-  "duration": 3147412142,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyAccount.it_should_display_new_Addresss()"
-});
-formatter.result({
-  "duration": 8078364123,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyAccount.i_click_on_Edit_button()"
-});
-formatter.result({
-  "duration": 427863097,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyAccount.edit_the_Address()"
-});
-formatter.result({
-  "duration": 369866890,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyAccount.i_click_on_Save_button()"
-});
-formatter.result({
-  "duration": 3123797350,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyAccount.it_should_display_the_updated_address()"
-});
-formatter.result({
-  "duration": 9089387634,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyAccount.i_click_on_Delete_Address()"
-});
-formatter.result({
-  "duration": 124097779,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyAccount.it_should_delete_the_address()"
-});
-formatter.result({
-  "duration": 14048667040,
-  "status": "passed"
-});
+formatter.write("Current Page URL is https://t26445-s41141.mozu.com/en-us/shop/personalized#");
+formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 586272625,
+  "duration": 6042029297,
   "status": "passed"
 });
 });

@@ -14,12 +14,14 @@ public class ProductListAction extends GlobalUtil {
 	
 	public static boolean verifyDisplayedItems(WebDriver driver) throws InterruptedException {
 		int flag= 0;
+		//executionDelay(5000);
 		int count = countOfElements(driver, productListOR.perPageItems);
 		System.out.println("count "+count);
 		List<WebElement> items = mutilpleOccurenceOfElement(driver, productListOR.perPageItems);
 		System.out.println(items);
 		System.out.println("items "+items.size());
 		for(int i =0; i<count-2; i++) {	//count-1 to leave View All value
+			//executionDelay(10000);
 			int perPagetiems = Integer.parseInt(items.get(i).getText().split(":")[1].trim());
 			System.out.println("per page "+perPagetiems);
 			

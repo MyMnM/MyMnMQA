@@ -186,6 +186,7 @@ public class Cart extends GlobalUtil{
 	public void it_displays_appropriate_error_message() throws Throwable {
 		String errorMessagePath = "//li[contains(text(),\""+errorMessage+"\")]";
 		System.out.println("error message path "+errorMessagePath);
+		executionDelay(6000);
 		Assert.assertTrue("error message for invalid coupon code is not displayed" ,isWebElementPresent(driver, errorMessagePath));
 		
 	   

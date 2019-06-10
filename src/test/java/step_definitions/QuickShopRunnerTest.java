@@ -40,7 +40,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 				   "com.cucumber.listener.ExtentCucumberFormatter:output/report.html"
 		            		
 		},
-		tags = {"@QuickShop2"}
+		tags = {"@QuickShop"}
 		)
 public class QuickShopRunnerTest extends AbstractTestNGCucumberTests{
    /*

@@ -74,7 +74,12 @@ public class Checkout extends GlobalUtil{
 	    	clickOnElementUsingJS(driver, ProductDetailPageOR.proceedToCheckoutButton);
 	    }
 	    else {
-	    	clickOnElementUsingJS(driver, CartOR.checkoutButton);
+	    	/*below line is commented for US becuase now checkout funtionality is changed for Normal product.
+	    	Earlier it navigates directly to Checkout page uopn clicking Add to Cart.
+	    	Now it shows Global cart pop up andcheckout option*/
+//	    	clickOnElementUsingJS(driver, CartOR.checkoutButton);	    	
+	    	hoverMouse(homePageOR.cartIcon,driver);
+	    	clickOnElementUsingJS(driver, GlobalCartOR.checkOutButton);
 			executionDelay(5000);
 	    }
 	}

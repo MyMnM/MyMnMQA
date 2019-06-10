@@ -69,7 +69,8 @@ public class homePageOR {
 	public final static String wrongFormatErrorMessage = "//span[contains(text(),'Email does not appear to be a valid e-mail address.')]";
 	
 	public final static String usEmailSubscribeBody = "//div[@class='emailSignupBody']";
-	public final static String usEmailclose = "//button[@class='close']";
+	//public final static String usEmailclose = "//button[@class='close']";
+	public final static String usEmailclose = "//div[@class='modal-header']//button[@data-dismiss='modal']";
 	public final static String usEmail = "//input[@id='emailAddress']";
 	public final static String usSubscribeNow = "//input[@class='homePagePopupSubmit']";
 	

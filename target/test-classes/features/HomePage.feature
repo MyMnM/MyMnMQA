@@ -4,12 +4,12 @@ Background:
 Given I open the given website
 Then verify the Url
 
-   @HomePage @P1 @P1US
+   @HomePage @P1 @P1US @P1USLive
    Scenario:Verify click on logo of the website is working and redirect on home page        
     When I click on logo of the website 
     Then  it redirects me to the Home Page
     
-    @HomePage @P1 @P1US
+    @HomePage @P1 @P1US @P1USLive
   	Scenario Outline:Verify search bar is working and give auto suggestions for what user types eg:product name   
     When I enter the value "<search>"in Search bar
     Then  give auto suggestions for what user types
@@ -24,18 +24,18 @@ Then verify the Url
     When I click on flag icon
     Then it redirects to specific country site
     
-    @HomePage @P1 @P1US
+    @HomePage @P1 @P1US @P1USLive
     Scenario: Verify lite Login icon is clickable and working fine    
     When I click on Login icon
     Then it opens new Shopper Window
     
-    
-    @HomePage @P1 @P1US 
+     
+    @HomePage @P1 @P1US @P1USLive
     Scenario:Verify cart icon is present and on hovering icon should show the items present in cart    
     When I hover on the cart icon
     Then it shows the cart contents
     
-    @HomePage @P1 @P1US
+    @HomePage @P1 @P1US @P1USLive
     Scenario:Verify Design your own button redirects to fluid page    
     When I click on Design your own button
     Then it redirects to fluid page
@@ -67,7 +67,7 @@ Then verify the Url
     When I click on site Map
     Then it redirects to site Map page
     
-    @HomePage @P1 @P1US
+    @HomePage @P1 @P1US @P1USLive
     Scenario:Verify in footer social icons are visible and on clicking redirects to specific social page 
     When I click on Facebook link
     Then it redirects to Facebook page
@@ -84,7 +84,7 @@ Then verify the Url
     When I click on Instagram link
     Then it redirects to Instagram page
     
-    @HomePage @P1 @P1US
+    @HomePage @P1 @P1US @P1USLive
     Scenario Outline:Verify sign up form is visible in footer and on filling valid email it redirects to email sign up page
     When I fill valid email as "<email>" and click on sign up in footer
     Then it redirects to email sign up page
@@ -94,7 +94,7 @@ Then verify the Url
     |test141@gmail.com|
     
     
-    @HomePage @P1 @P1US
+    @HomePage @P1 @P1US @P1USLive
     Scenario Outline:Verify login is working and user is able to login
     When I click on Login icon
     And I enter username as "<email>" and password as "<password>"
@@ -105,7 +105,7 @@ Then verify the Url
     |email                      |password      |
     |mmsuk@gmail.com            |automation@123|
     
-    @HomePage @P1 @P1US
+    @HomePage @P1 @P1US @P1USLive
     Scenario Outline:Verify user is able to register and subscribe from new shopper in login lite
     When I click on Login icon
     And I click on Create an Account
@@ -118,13 +118,13 @@ Then verify the Url
     |username                      |password      |
     |asdef@gmail.com               |automation@123|
     
-    @HomePage @P1 @P1US
+    @HomePage @P1 @P1US @P1USLive
     Scenario:Verify forgot password is working in lite login screen  
     When I click on Login icon
     When I click on Forgot your Password
     Then it redirects to page having Forgot your password heading
     
-    @HomePage @P1 @P1US
+    @HomePage1 @P1 @P1US
     Scenario:Verify All the validation error message is coming in lite login if put wrong data in fields or for empty fields  
     When I click on Login icon
     And I click on Sign in button
@@ -139,7 +139,7 @@ Then verify the Url
     And I click on Sign in button
     Then respective error message should be displayed
     
-    @HomePage @P1 @P1US
+    @HomePage @P1 @P1US @P1USLive
     Scenario Outline:Verify login is working and user is able to login
     When I click on Login icon
     And I enter username as "<email>" and password as "<password>"

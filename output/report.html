@@ -32,6 +32,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1)" view='testrunner-logs-view'><i class='material-icons'>note</i></a></li>
 		</ul>
@@ -46,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>May 22, 2019 11:39:47 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Jun 10, 2019 06:58:35 PM</span>
 				</a>
 			</li>
 			<li>
@@ -72,6 +73,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -84,9 +86,9 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@P1</a></li>
-					<li><a href='#'>@P2</a></li>
-					<li><a href='#'>@MyAccount</a></li>
+					<li><a href='#'>@ProductList</a></li>
+					<li><a href='#'>@P1US</a></li>
+					<li><a href='#'>@P1USLive</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -134,10 +136,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -149,10 +151,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -164,10 +166,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>18</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='87.5%'><span class='strong'>7</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='12.5%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -181,105 +183,96 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Verify multiple scenarios on MyAccount Page</span>
-						<span class='test-time'>May 22, 2019 11:39:47 AM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>Verify multiple scenarios on Product List page</span>
+						<span class='test-time'>Jun 10, 2019 06:58:35 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenariooutline node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 2m 15s+480ms</span>
+<div class='scenario node' test-id='2' status='fail'>
+	<div class='category-list'>
+		<span class='category label white-text'>@ProductList</span>
+		<span class='category label white-text'>@P1US</span>
+		<span class='category label white-text'>@P1USLive</span>
+	</div>
+	<span class='duration right label'>0h 1m 30s+746ms</span>
 	<div class='desc'>
-		<b>ScenarioOutline</b>
-		<span class="desc-text">Verify user is able to add new address,edit and delete it</span>
+		<b>Scenario</b>
+		<span class="desc-text">Validate Sort By dropdoown is working fine and page sorts as per selected option ie:Popularity,Recency,Low to High,High to Low</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node scenario pass' status='pass'>
-			<div class='category-list'>
-				<span class='category label white-text'>@P1</span>
-				<span class='category label white-text'>@P2</span>
-				<span class='category label white-text'>@MyAccount</span>
-			</div>
+		<li test-id='3' class='node given pass' status='pass'>
 			
-			<b>Scenario</b>
+			<b>Given</b>
 			
-			<span class="bdd-step-name">Verify user is able to add new address,edit and delete it</span>
+			<span class="bdd-step-name">Given I open the given website</span>
+				<div class='pre'>passed</div>
 			
-				<ul class='steps'>
-					<li test-id='4' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given I open the given website</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='5' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then verify the Url</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='6' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When I click on Login icon</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='7' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I enter username as "mmsuk@gmail.com" and password as "automation@123"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='8' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I click on Sign in button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='9' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then I am successfully logged in</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='10' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And click on Account Settings</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='11' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then My Account title is visible</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='12' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When I click on Add new address button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='13' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I enter all the valid values in all the mandatory fields</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='14' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I click on Save button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='15' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then it should display new Addresss</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='16' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When i click on Edit button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='17' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And edit the Address</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='18' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I click on Save button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='19' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then it should display the updated address</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='20' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When I click on Delete Address</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='21' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then it should delete the address</span>
-							<div class='pre'>passed</div>
-					</li>
-				</ul>
+		</li>
+		<li test-id='4' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then verify the Url</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='5' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When I navigate to product List page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='6' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Global Cart is visible</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='7' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When I select Low to High sortby value</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='8' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then products gets listed as per Low to High for US site</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='9' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When I select High to Low sortby value</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='10' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then products gets listed as per High to Low for US site</span>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="E:\projects\Strand\ExecutionReports\FailedScreenshots\ScreenShot_1560173406707.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+				<div class='pre'><pre>java.lang.AssertionError: Products are not filtered as per Low to High
+	at org.junit.Assert.fail(Assert.java:93)
+	at org.junit.Assert.assertTrue(Assert.java:43)
+	at step_definitions.productList.products_gets_listed_as_per_High_to_Low_for_US_site(productList.java:244)
+	at ?.Then products gets listed as per High to Low for US site(features/ProductList.feature:39)
+</pre></div>
+			
 		</li>
 	</ul>
 </div>
@@ -337,15 +330,15 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@P1</span>
+						<span class='category-name'>@ProductList</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -360,9 +353,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 22, 2019 11:39:47 AM</td>
-										<td class='linked' test-id='3'>Verify multiple scenarios on MyAccount Page.Verify user is able to add new address,edit and delete it.Verify user is able to add new address,edit and delete it</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Jun 10, 2019 06:58:35 PM</td>
+										<td class='linked' test-id='2'>Verify multiple scenarios on Product List page.Validate Sort By dropdoown is working fine and page sorts as per selected option ie:Popularity,Recency,Low to High,High to Low</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -371,15 +364,15 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@P2</span>
+						<span class='category-name'>@P1US</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -394,9 +387,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 22, 2019 11:39:47 AM</td>
-										<td class='linked' test-id='3'>Verify multiple scenarios on MyAccount Page.Verify user is able to add new address,edit and delete it.Verify user is able to add new address,edit and delete it</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Jun 10, 2019 06:58:35 PM</td>
+										<td class='linked' test-id='2'>Verify multiple scenarios on Product List page.Validate Sort By dropdoown is working fine and page sorts as per selected option ie:Popularity,Recency,Low to High,High to Low</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -405,15 +398,15 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@MyAccount</span>
+						<span class='category-name'>@P1USLive</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -428,9 +421,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 22, 2019 11:39:47 AM</td>
-										<td class='linked' test-id='3'>Verify multiple scenarios on MyAccount Page.Verify user is able to add new address,edit and delete it.Verify user is able to add new address,edit and delete it</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Jun 10, 2019 06:58:35 PM</td>
+										<td class='linked' test-id='2'>Verify multiple scenarios on Product List page.Validate Sort By dropdoown is working fine and page sorts as per selected option ie:Popularity,Recency,Low to High,High to Low</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -449,6 +442,72 @@
 	</div>
 </div>
 <!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.AssertionError</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Jun 10, 2019 07:00:02 PM</td>
+                                                        <td class='linked' test-id='10'>Verify multiple scenarios on Product List page.Validate Sort By dropdoown is working fine and page sorts as per selected option ie:Popularity,Recency,Low to High,High to Low.Then products gets listed as per High to Low for US site</td>
+                                                        <td><pre><pre>java.lang.AssertionError: Products are not filtered as per Low to High
+	at org.junit.Assert.fail(Assert.java:93)
+	at org.junit.Assert.assertTrue(Assert.java:43)
+	at step_definitions.productList.products_gets_listed_as_per_High_to_Low_for_US_site(productList.java:244)
+	at ?.Then products gets listed as per High to Low for US site(features/ProductList.feature:39)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -470,25 +529,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>18</div>
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 22, 2019 11:39:47 AM</div>
+					<div class='panel-lead'>Jun 10, 2019 06:58:35 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 22, 2019 11:42:03 AM</div>
+			 		<div class='panel-lead'>Jun 10, 2019 07:00:12 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>136,341ms</div>
+					<div class='panel-lead'>97,126ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -523,21 +582,21 @@
 							<th>Others</th>
 						</tr>
 						<tr>
-							<td>@P1</td>
-							<td>1</td>
+							<td>@ProductList</td>
 							<td>0</td>
+							<td>1</td>
 							<td>0</td>
 						</tr>
 						<tr>
-							<td>@P2</td>
-							<td>1</td>
+							<td>@P1US</td>
 							<td>0</td>
+							<td>1</td>
 							<td>0</td>
 						</tr>
 						<tr>
-							<td>@MyAccount</td>
-							<td>1</td>
+							<td>@P1USLive</td>
 							<td>0</td>
+							<td>1</td>
 							<td>0</td>
 						</tr>
 					</table>
@@ -562,31 +621,31 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
-				passChild: 1,
-				failChild: 0,
+				passChild: 0,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 1,
 				
-				passGrandChild: 18,
-				failGrandChild: 0,
+				passGrandChild: 7,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 0,
+				exceptionsGrandChild: 1,
 			};
 		</script>
 		

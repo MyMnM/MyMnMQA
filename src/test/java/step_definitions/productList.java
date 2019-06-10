@@ -80,7 +80,8 @@ public class productList extends GlobalUtil{
 	
 	@When("^I select Low to High sortby value$")
 	public void i_select_Low_to_High_sortby_value() throws Throwable {
-	   SelectUsingIndex(productListOR.sortByDropDown, 2);
+	   //SelectUsingIndex(productListOR.sortByDropDown, 2);
+	   SelectUsingVisibleValue(productListOR.sortByDropDown, "Sort by: Price: Low to High");
 	   executionDelay(15000);
 	}
 
@@ -91,7 +92,8 @@ public class productList extends GlobalUtil{
 
 	@When("^I select High to Low sortby value$")
 	public void i_select_High_to_Low_sortby_value() throws Throwable {
-		SelectUsingIndex(productListOR.sortByDropDown, 3);
+		//SelectUsingIndex(productListOR.sortByDropDown, 3);
+		SelectUsingVisibleValue(productListOR.sortByDropDown, "Sort by: Price: High to Low");
 		 executionDelay(15000);
 	}
 

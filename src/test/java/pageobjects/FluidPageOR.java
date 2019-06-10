@@ -13,7 +13,7 @@ public class FluidPageOR {
 	public final static String fluidAddTextArea1 = "//input[@aria-label='Text Personalization 1']";
 	public final static String fluidAddTextArea2 = "//input[@aria-label='Text Personalization 1 - Line 2']";
 	public final static String fluidSelectPackaging = "//div[@alias='select_packaging_1']";
-	public final static String fluidPackagingImage = "(//div[@class='fc-packaging-image'])[1]";
+	public final static String fluidPackagingImage = "(//div[@class='fc-packaging-image'])[18]";
 	public final static String fluidPackagingIncreaseQuantity = "//div[@class='fc-quantity-increment fc-quantity-button-increase']";
 	public final static String fluidPackagingSubtotal = "//span[@class='fc-packaging-value']";
 	public final static String fluidSavedDesign = "//button[contains(text(),'Save design')]";

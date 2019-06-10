@@ -36,22 +36,26 @@ When I click on View cart button
 Then it navigates to basket page
 Then Product code is present under every product present in cart page
 
-@Cart @P1 @P1US
+@Cart @P1 @P1US @P1USLive
 Scenario:Verify edit customization showing for customized products
 When I navigate to customised product
 And I click on Personalize button
 And I close the pop up window
 When I select a color of the product
+When I click on Packaging information
+And I select desired packaging
 Then I click on Add to Cart button
 Then it displays Edit Customization option
 
 
-@Cart @P1 @P1US
+@Cart @P1 @P1US @P1USLive
 Scenario:Verify preview link visible and clickable for customize products
 When I navigate to customised product
 And I click on Personalize button
 And I close the pop up window
 When I select a color of the product
+When I click on Packaging information
+And I select desired packaging
 Then I click on Add to Cart button
 Then it displays Preview link
 
@@ -68,12 +72,14 @@ When I decrement the quantity by clicking on minus sign
 Then Item total gets decreased accordingly
 
 
-@Cart @P1 @P1US
+@Cart @P1 @P1US @P1USLive
 Scenario:Verify there should be text written Tax & Shipping Calculated at Checkout written above total and subtotal
 When I navigate to customised product
 And I click on Personalize button
 And I close the pop up window
 When I select a color of the product
+When I click on Packaging information
+And I select desired packaging
 Then I click on Add to Cart button
 Then Tax & Shipping Calculated at Checkout is present
 
@@ -84,48 +90,58 @@ When I navigate to customised product
 And I click on Personalize button
 And I close the pop up window
 When I select a color of the product
+When I click on Packaging information
+And I select desired packaging
 Then I click on Add to Cart button
 When I click on Remove link
 Then item gets removed from the cart
 
-@Cart @P1 @P1US
+@Cart @P1 @P1US @P1USLive
 Scenario:Verify the coupon code field displays with apply button and is working fine
 When I navigate to customised product
 And I click on Personalize button
 And I close the pop up window
 When I select a color of the product
+When I click on Packaging information
+And I select desired packaging
 Then I click on Add to Cart button
 When I enter valid coupon code and click on Apply
 Then Coupon code gets applied
 When I click on Remove link to remove coupon code
 Then coupon code applied is removed
 
-@Cart @P1 @P1US
+@Cart @P1 @P1US @P1USLive
 Scenario:Verify error messeges displays if user enters wrong/invalid coupon code 
 When I navigate to customised product
 And I click on Personalize button
 And I close the pop up window
 When I select a color of the product
+When I click on Packaging information
+And I select desired packaging
 Then I click on Add to Cart button
 When I enter invalid coupon Code
 Then it displays appropriate error message
 
-@Cart @P1 @P1US
+@Cart @P1 @P1US @P1USLive
 Scenario:Validate checkout button is working and redirect user to Checkout screen
 When I navigate to customised product
 And I click on Personalize button
 And I close the pop up window
 When I select a color of the product
+When I click on Packaging information
+And I select desired packaging
 Then I click on Add to Cart button
 When I click on Checkout button
 Then it redirects to Checkout Page
 
-@Cart @P1 @P1US
+@Cart @P1 @P1US @P1USLive
 Scenario:Validate continue shopping button is working fine
 When I navigate to customised product
 And I click on Personalize button
 And I close the pop up window
 When I select a color of the product
+When I click on Packaging information
+And I select desired packaging
 Then I click on Add to Cart button
 When I click on Continue Shopping button
 Then it navigates to Home Page
