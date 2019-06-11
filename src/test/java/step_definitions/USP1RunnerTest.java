@@ -36,7 +36,7 @@ public class USP1RunnerTest extends AbstractTestNGCucumberTests{
     public static void teardown() throws IOException, InterruptedException {
         Reporter.loadXMLConfig(new File("src/test/resources/extent-config.xml"));
         Reporter.setSystemInfo("user", System.getProperty("user.name"));
-        Reporter.setSystemInfo("os", "Windows 7");
+        Reporter.setSystemInfo("os", System.getProperty("os.name"));
         Reporter.setTestRunnerOutput("Output");
         //Thread.sleep(30000);
         SendEmail.sendEmailReport();
