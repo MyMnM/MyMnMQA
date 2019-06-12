@@ -51,7 +51,7 @@ public class SendEmail
       
      					protected PasswordAuthentication getPasswordAuthentication() {
       
-     					return new PasswordAuthentication("vibhav.gupta116@gmail.com", "for3v3ry14123");
+     					return new PasswordAuthentication("vibhav.gupta116@gmail.com", "for3v3ryone1");
       
      					}
       
