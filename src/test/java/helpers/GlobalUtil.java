@@ -328,7 +328,8 @@ public class GlobalUtil {
 		
 	}
 	
-	public static void scrollIntoView(WebElement element,WebDriver driver) {
+	public static void scrollIntoView(WebElement element,WebDriver driver) throws InterruptedException {
+		executionDelay(5000);
 		JavascriptExecutor je = (JavascriptExecutor) driver; 	 
 		// now execute query which actually will scroll until that element is not appeared on page.	 
 		je.executeScript("arguments[0].scrollIntoView(true);",element);

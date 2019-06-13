@@ -10,7 +10,8 @@ public class ProductDetailPageOR {
 	//public final static String homeBreadcrumb="//a[contains(text(),'Home')]";
 	public final static String homeBreadcrumb="//div[@class='mz-breadcrumbs row']//a[contains(text(),'Home')]";
 	public final static String categoryBreadcrumb="//a[@class='mz-breadcrumb-link is-first']";
-	public final static String categoryName = "//div[@class='mz-pagetitle product-label col-xs-12 col-lg-5']";
+	//public final static String categoryName = "//div[@class='mz-pagetitle product-label col-xs-12 col-lg-5']";
+	public final static String categoryName = "//h1[@class='mz-pagetitle product-label col-xs-12 col-lg-5']";
 	public final static String quantityBox = "//div[@class='qty-box']";
 	public final static String addToCart = "//button[@id='add-to-cart']";
 	//public final static String proceedToCheckout = "//button[contains(text(),'Proceed to Checkout')]";
