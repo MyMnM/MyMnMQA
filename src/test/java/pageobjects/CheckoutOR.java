@@ -84,7 +84,8 @@ public class CheckoutOR {
 	public final static String checkoutPlaceOrder_Italy = "//button[contains(text(),'Effettua l’ordine')]";
 	public final static String checkoutPlaceOrder_Spain = "//button[contains(text(),'Hacer un pedido')]";
 	
-	public final static String checkoutPlaceOrder_Poland = "//button[contains(text(),'Złóż zamówienie')]";
+	//public final static String checkoutPlaceOrder_Poland = "//button[contains(text(),'Złóż zamówienie')]";
+	public final static String checkoutPlaceOrder_Poland = "//button[@data-mz-action='submit']";
 	
 	public final static String checkoutBillingFirstName = "//input[@data-mz-value='billingContact.firstName']";
 	public final static String checkoutBillingSummaryFirstName = "(//div[@class='mz-addresssummary'])[1]//div[1]";
