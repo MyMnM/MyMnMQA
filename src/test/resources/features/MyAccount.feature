@@ -27,9 +27,9 @@ Then My Account title is visible
 When I click on edit link
 And I click on Save button with all fields empty
 Then it should display the validation error message
-When I enter email id in invalid format
-And I click on Save button
-Then it should display appropriate error message
+#When I enter email id in invalid format
+#And I click on Save button
+#Then it should display appropriate error message
 When I update firstName as "<firstName>",lastName as "<lastName>" and email as "<Email>"
 And I click on Save button
 Then it should gets updated
