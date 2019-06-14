@@ -38,7 +38,7 @@ Then it displays Global Cart
 
 @QuickShop2 @P1
 Scenario:Verify Personalize button on accordion under quickshop and its functionality on accordion under quickshop
-When I navigate to Product listing
+#When I navigate to Product listing
 When I click on Quick Shop button
 Then it displays Personalize button
 When i click on Personalize button
