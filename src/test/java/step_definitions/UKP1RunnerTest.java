@@ -13,6 +13,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 import helpers.SendEmail;
+import helpers.SendSMS;
 
 
 
@@ -39,6 +40,7 @@ public class UKP1RunnerTest extends AbstractTestNGCucumberTests{
         Reporter.setSystemInfo("os", "Windows 7");
         Reporter.setTestRunnerOutput("Output");
         SendEmail.sendEmailReport();
+        SendSMS.sentOutputThroughSMS();
       
     }
 }
