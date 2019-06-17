@@ -13,6 +13,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 import helpers.SendEmail;
+import helpers.SendSMS;
 
 
 
@@ -40,6 +41,7 @@ public class USP1RunnerTest extends AbstractTestNGCucumberTests{
         Reporter.setTestRunnerOutput("Output");
         //Thread.sleep(30000);
         SendEmail.sendEmailReport();
+        SendSMS.sentOutputThroughSMS();
         
       
     }
