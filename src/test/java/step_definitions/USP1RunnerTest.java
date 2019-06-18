@@ -30,7 +30,7 @@ import helpers.SendSMS;
 				   "com.cucumber.listener.ExtentCucumberFormatter:output/report.html"
 		            		
 		},
-		tags = {"@P1US"}
+		tags = {"@P1USLive"}
 		)
 public class USP1RunnerTest extends AbstractTestNGCucumberTests{
 	@AfterClass
