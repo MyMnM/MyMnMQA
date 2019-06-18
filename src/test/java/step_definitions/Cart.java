@@ -132,6 +132,7 @@ public class Cart extends GlobalUtil{
 	
 	@When("^I click on Remove link$")
 	public void i_click_on_Remove_link() throws Throwable {
+		executionDelay(6000);
 		clickOnElementUsingJS(driver, CartOR.removeLink);
 		executionDelay(4000);
 	}
@@ -178,6 +179,7 @@ public class Cart extends GlobalUtil{
 	
 	@When("^I enter invalid coupon Code$")
 	public void i_enter_invalid_coupon_Code() throws Throwable {
+		executionDelay(6000);
 		inputText(CartOR.couponField, invalidCouponCode, driver);
 		clickOnElementUsingJS(driver, CartOR.applyButton);
 	}
@@ -206,6 +208,7 @@ public class Cart extends GlobalUtil{
 	
 	@When("^I click on Continue Shopping button$")
 	public void i_click_on_Continue_Shopping_button() throws Throwable {		
+		executionDelay(6000);
 		clickOnElementUsingJS(driver, CartOR.continueShoppingButton);
 		executionDelay(5000);
 	}

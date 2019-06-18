@@ -25,6 +25,7 @@ import com.cucumber.listener.Reporter;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import helpers.ConfigReader;
 
 // TODO: Auto-generated Javadoc
 /**
@@ -72,6 +73,7 @@ public class Hooks{
     	capabilities.setCapability(ChromeOptions.CAPABILITY, options);
     	driver = new ChromeDriver(options);
     	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+    	driver.manage().timeouts().pageLoadTimeout(ConfigReader.getIntValue("PageLoadTimeOut"), TimeUnit.SECONDS);
     	driver.manage().deleteAllCookies();    	
     	//driver.manage().window().maximize();
      

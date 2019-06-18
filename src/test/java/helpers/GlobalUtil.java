@@ -14,6 +14,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -66,10 +67,23 @@ public class GlobalUtil {
 	 */
 	public static void inputText(WebElement element,String value,WebDriver driver)
 	{
-		highlight(element, driver);
-		WebElement ele=waitForElementToBeClickable(driver,element);//explicit wait for element to appear and be clickable on the web page
+		 int attempts = 0;
+		    while(attempts < 2) {
+		        try {
+		        	WebElement ele=waitForElementToBeClickable(driver,element);//explicit wait for element to appear and be clickable on the web page
+		    		highlight(ele, driver);
+		    		ele.clear();
+		    		ele.sendKeys(value);		            
+		            break;
+		        } catch(StaleElementReferenceException e) {
+		        }
+		        attempts++;
+		    }
+		
+		/*WebElement ele=waitForElementToBeClickable(driver,element);//explicit wait for element to appear and be clickable on the web page
+		highlight(ele, driver);
 		ele.clear();
-		ele.sendKeys(value);
+		ele.sendKeys(value);*/
 	}
 	
 	/**
@@ -123,10 +137,25 @@ public class GlobalUtil {
 	
 	public  static void clickOnElementUsingJS(WebDriver driver,WebElement element)
 	{	     
+		 int attempts = 0;
+		    while(attempts < 2) {
+		        try {
+		        	waitForElementToBeClickable(driver, element);
+		    		highlight(element, driver);
+		    		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		    		executor.executeScript("arguments[0].click();", element);
+		            break;
+		        } catch(StaleElementReferenceException e) {
+		        }
+		        attempts++;
+		    }
+		
+		
+		
+		/*waitForElementToBeClickable(driver, element);
 		highlight(element, driver);
-		waitForElementToBeClickable(driver, element);
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
-		executor.executeScript("arguments[0].click();", element);
+		executor.executeScript("arguments[0].click();", element);*/
 	}
 	
 	

@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 public class homePageOR {
-	public final static String logo="//img[@src='/resources/images/svg/mms-logo.svg']";
+	public final static String logo="//img[contains(@src,'/resources/images/svg/mms-logo.svg')]";
 	public final static String emailPopUp="//input[@id='emailAddress']";
 	public final static String agePopUp="//div[@class='ageGateModelSignup']";
 	public final static String month="//input[@name='month']";

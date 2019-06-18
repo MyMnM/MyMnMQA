@@ -102,8 +102,7 @@ public class CartOR {
 	@CacheLookup
 	public static WebElement qunatityMinusSign;
 	
-	@FindBy(how=How.XPATH, using=cartRemoveLink)
-	@CacheLookup
+	@FindBy(how=How.XPATH, using=cartRemoveLink)	
 	public static WebElement removeLink;
 	
 	@FindBy(how=How.XPATH, using=cartTaxAndShipping)
