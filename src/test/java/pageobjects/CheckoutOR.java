@@ -106,7 +106,7 @@ public class CheckoutOR {
 	public final static String checkoutNewAccountConfirmPassword = "//input[@name='new-account-confirm']";
 	
 	public final static String orderConfirmationTitle = "//h1[contains(text(),'Order Confirmation')]";
-	public final static String orderConfirmationTitle_France = "//h1[contains(text(),'Confirmation de commande ')]";
+	public final static String orderConfirmationTitle_France = "//h1[contains(text(),'Confirmation de commande')]";
 	public final static String orderConfirmationTitle_Dutch = "//h1[contains(text(),'Bestelbevestiging ')]";
 	public final static String orderConfirmationTitle_German = "//h1[contains(text(),'Bestellbestätigung ')]";
 	public final static String orderConfirmationTitle_Italy = "//h1[contains(text(),'Conferma')]";
