@@ -107,11 +107,11 @@ public class CheckoutOR {
 	
 	public final static String orderConfirmationTitle = "//h1[contains(text(),'Order Confirmation')]";
 	public final static String orderConfirmationTitle_France = "//h1[contains(text(),'Confirmation de commande')]";
-	public final static String orderConfirmationTitle_Dutch = "//h1[contains(text(),'Bestelbevestiging ')]";
-	public final static String orderConfirmationTitle_German = "//h1[contains(text(),'Bestellbestätigung ')]";
+	public final static String orderConfirmationTitle_Dutch = "//h1[contains(text(),'Bestelbevestiging')]";
+	public final static String orderConfirmationTitle_German = "//h1[contains(text(),'Bestellbestätigung')]";
 	public final static String orderConfirmationTitle_Italy = "//h1[contains(text(),'Conferma')]";
-	public final static String orderConfirmationTitle_Spain = "//h1[contains(text(),'Confirmación de pedido ')]";
-	public final static String orderConfirmationTitle_Poland = "//h1[contains(text(),'Potwierdzenie zamówienia ')]";
+	public final static String orderConfirmationTitle_Spain = "//h1[contains(text(),'Confirmación de pedido')]";
+	public final static String orderConfirmationTitle_Poland = "//h1[contains(text(),'Potwierdzenie zamówienia')]";
 	
 	public final static String checkoutOrderSummarySubTotalValue = "(//span[@class='mz-ordersummary-totalvalue col-sm-4'])[1]";
 	public final static String checkoutOrderSummaryOrderLevelDiscountValue = "//span[@class='mz-ordersummary-discountamt col-sm-4']";
