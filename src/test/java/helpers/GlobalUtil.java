@@ -140,6 +140,7 @@ public class GlobalUtil {
 		 int attempts = 0;
 		    while(attempts < 2) {
 		        try {
+		        	System.out.println("attempts is "+ attempts);
 		        	waitForElementToBeClickable(driver, element);
 		    		highlight(element, driver);
 		    		JavascriptExecutor executor = (JavascriptExecutor)driver;
