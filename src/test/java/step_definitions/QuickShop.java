@@ -44,7 +44,7 @@ public class QuickShop extends GlobalUtil{
 	public void i_click_on_Quick_Shop_button() throws Throwable {
 		
 		ProductListAction.hoverMouse(productListOR.productNameLink, driver);
-		executionDelay(5000);
+		executionDelay(8000);
 		clickOnElementUsingJS(driver, productListOR.quickShopButton);
 	}
 
