@@ -7,7 +7,7 @@ When I navigate to customised product
 And I click on Personalize button
 And I close the pop up window
 
-@Fluid @P1
+@Fluid @P1  @P1UKLive
 Scenario:Verify user is able to select options and packaging
 When I select a color of the product
 When I click on Add ClipArt 
@@ -17,7 +17,7 @@ And enter the desired text
 When I click on Packaging information
 And I select desired packaging
 
-@Fluid @P1
+@Fluid @P1  @P1UKLive
 Scenario:Verify that after selection of packing user can update the minimum quantity
 When I select a color of the product
 When I click on Add ClipArt 
@@ -29,7 +29,7 @@ And I select desired packaging
 When I update Quantity after selection of packing
 Then Subtotal also gets updated
 
-@Fluid
+@Fluid 
 Scenario Outline:Verify that user can save design while clicking over save design button
 When I select a color of the product
 And I click on Save Design button
@@ -45,13 +45,13 @@ Examples:
 |email                      |password      |
 |mmsuk@gmail.com            |automation@123|
 
-@Fluid @P1
+@Fluid @P1  @P1UKLive
 Scenario:Verify that option of printing saved design is working fine, User is able to print the saved design
 When I select a color of the product
 When I click on Print button
 Then it displays Print popUp
 
-@Fluid @P1
+@Fluid @P1  @P1UKLive
 Scenario:Verify that reset button functionality is working fine
 When I select a color of the product
 And I click on Reset button

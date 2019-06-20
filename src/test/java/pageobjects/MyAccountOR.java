@@ -14,6 +14,7 @@ public class MyAccountOR {
 	public final static String myAccountSave = "//button[contains(text(),'Save')]";
 	public final static String myAccountDisplayName = "//div[@class='mz-accountsettings-displayname']";
 	public final static String myAccountDisplayEmail = "//div[@class='mz-accountsettings-displayemail']";
+	public final static String myAccountCountryDropDown = "//select[@data-mz-value='editingContact.address.countryCode']";
 	
 	public final static String addressBookEdit = "(//a[@class='mz-accountaddressbook-edit'])[1]";
 	public final static String firstNameErrorMessage = "//span[@data-mz-validationmessage-for='editingContact.firstName']";
@@ -132,6 +133,9 @@ public class MyAccountOR {
 	
 	@FindBy(how=How.XPATH, using=fluidSavedDesign)	
 	public static WebElement fluidSavedDesignLink;
+	
+	@FindBy(how=How.XPATH, using=myAccountCountryDropDown)	
+	public static WebElement countryDropSown;
 	
 	
 	

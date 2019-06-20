@@ -147,6 +147,7 @@ public class MyAccount extends GlobalUtil{
 		inputText(CheckoutOR.firstNameField, firstName, driver);
 		inputText(CheckoutOR.lastNameField, lastName, driver);
 		inputText(CheckoutOR.addressLine1, addressLine1, driver);
+		SelectUsingIndex(MyAccountOR.countryDropSown, 1);
 		inputText(CheckoutOR.cityField, city, driver);
 		inputText(CheckoutOR.zipCodeField, zipCode, driver);
 		inputText(CheckoutOR.phoneNumber, phoneNumber, driver);

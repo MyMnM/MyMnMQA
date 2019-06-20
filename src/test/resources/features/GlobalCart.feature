@@ -4,12 +4,12 @@ Background:
 Given I open the given website
 Then verify the Url
 
-@GlobalCart @P1
+@GlobalCart @P1  @P1UKLive
 Scenario:Verify Your Shopping basket is empty is displaying if cart has no products   
 When I hover on the cart icon
 Then it displays Your Shopping basket is empty
 
-@GlobalCart @P1
+@GlobalCart @P1  @P1UKLive
 Scenario:Verify on clicking add to cart button on product detail page/quick shop page products gets added to global cart   
 When I navigate to normal product page
 Then Add to cart button is visible
@@ -24,7 +24,7 @@ When I click on cart button
 Then quantity / price each / price / Subtotal is displaying correct in global cart
 Then item level discount is applied and total is calcualated for that particular item after deducting item level discount
 
-@GlobalCart @P1
+@GlobalCart @P1  @P1UKLive
 Scenario:Verify view cart button and checkout button and save Cart is working in global cart 
 When I navigate to normal product page
 Then Add to cart button is visible
@@ -37,7 +37,7 @@ Then it navigates to Checkout page
 When I click on Save Cart button
 Then it displays login menu.
 
-@GlobalCart @P1
+@GlobalCart @P1  @P1UKLive
 Scenario Outline:Verify on clicking checkout button it redirects to checkout page - For registered user
 When I click on Login icon
 And I enter username as "<email>" and password as "<password>"

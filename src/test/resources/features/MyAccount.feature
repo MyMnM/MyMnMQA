@@ -3,7 +3,7 @@ Background:
 Given I open the given website
 Then verify the Url
 
-@MyAccount @P1
+@MyAccount @P1  @P1UKLive
 Scenario Outline:Verify user is able to navigate to account settings after logging with valid credentials
 When I click on Login icon
 And I enter username as "<email>" and password as "<password>"
@@ -16,7 +16,7 @@ Examples:
 |email                      |password      |
 |mmsuk@gmail.com            |automation@123|
 
-@MyAccount @P1
+@MyAccount @P1  @P1UKLive
 Scenario Outline:Verify validation message displays for empty or on entering invalid details in my information and edit information
 When I click on Login icon
 And I click on Create an Account
@@ -39,7 +39,7 @@ Examples:
 |asdefghi@gmail.com               |automation@123|first     |last    |newEmail@gmail.com|
 
 
-@MyAccount @P1
+@MyAccount @P1  @P1UKLive
 Scenario Outline:Verify validation message displays for empty or on entering invalid details in address book
 When I click on Login icon
 And I enter username as "<email>" and password as "<password>"
@@ -54,7 +54,7 @@ Examples:
 |email                         |password      |firstName |lastName|Email             |
 |mmsuk@gmail.com               |automation@123|first     |last    |newEmail@gmail.com|
 
-@MyAccount @P1
+@MyAccount @P1  @P1UKLive
 Scenario Outline:Verify user is able to add new address,edit and delete it
 When I click on Login icon
 And I enter username as "<email>" and password as "<password>"
@@ -77,7 +77,7 @@ Examples:
 |mmsuk@gmail.com               |automation@123|
 
 
-@MyAccount @P1
+@MyAccount @P1  @P1UKLive
 Scenario Outline:Verify change pasword is working 
 When I click on Login icon
 And I click on Create an Account
@@ -98,7 +98,7 @@ Examples:
 |asdefghi@gmail.com               |automation@123|automation@123|newPass     |
 
 
-@MyAccount @P1
+@MyAccount @P1 
 Scenario Outline:Verify on clicking detail link in recent order it opens detail for that particular order
 When I click on Login icon
 And I enter username as "<email>" and password as "<password>"
@@ -129,7 +129,7 @@ Examples:
 |mmsuk@gmail.com            |automation@123|
 
 
-@MyAccount @P1
+@MyAccount @P1  @P1UKLive
 Scenario Outline:Verify save design is working and user is able to save designs for customized products
 When I click on Login icon
 And I enter username as "<email>" and password as "<password>"

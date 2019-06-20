@@ -5,7 +5,7 @@ Given I open the given website
 Then verify the Url
 
 
-@Cart @P1
+@Cart @P1  @P1UKLive
 Scenario:Verify product image and product name is displaying in cart page
 When I navigate to normal product page
 Then Add to cart button is visible
@@ -16,7 +16,7 @@ Then it navigates to basket page
 Then product image and product name is displaying in cart page
 
 
-@Cart @P1
+@Cart @P1  @P1UKLive
 Scenario:Verify Item / Quantity / Price / Item Total/Subtotal/Total fields and Product code is displaying in cart page
 When I navigate to normal product page
 Then Add to cart button is visible
@@ -26,7 +26,7 @@ When I click on View cart button
 Then it navigates to basket page
 Then Item / Quantity / Price / Item Total/Subtotal/Total fields are displaying in cart page
 
-@Cart @P1
+@Cart @P1  @P1UKLive
 Scenario:Verify Product code is present under every product present in cart page
 When I navigate to normal product page
 Then Add to cart button is visible
@@ -36,7 +36,7 @@ When I click on View cart button
 Then it navigates to basket page
 Then Product code is present under every product present in cart page
 
-@Cart @P1 @P1US
+@Cart @P1 @P1US  @P1UKLive
 Scenario:Verify edit customization showing for customized products
 When I navigate to customised product
 And I click on Personalize button
@@ -46,7 +46,7 @@ Then I click on Add to Cart button
 Then it displays Edit Customization option
 
 
-@Cart @P1 @P1US
+@Cart @P1 @P1US  @P1UKLive
 Scenario:Verify preview link visible and clickable for customize products
 When I navigate to customised product
 And I click on Personalize button
@@ -55,7 +55,7 @@ When I select a color of the product
 Then I click on Add to Cart button
 Then it displays Preview link
 
-@Cart @P1
+@Cart @P1  @P1UKLive
 Scenario:Verify on increasing/decreasing the quantity of the product will also update the total price 
 When I navigate to customised product
 And I click on Personalize button
@@ -68,7 +68,7 @@ When I decrement the quantity by clicking on minus sign
 Then Item total gets decreased accordingly
 
 
-@Cart @P1 @P1US
+@Cart @P1 @P1US  @P1UKLive
 Scenario:Verify there should be text written Tax & Shipping Calculated at Checkout written above total and subtotal
 When I navigate to customised product
 And I click on Personalize button
@@ -78,7 +78,7 @@ Then I click on Add to Cart button
 Then Tax & Shipping Calculated at Checkout is present
 
 
-@Cart @P1 @P1US
+@Cart @P1 @P1US  @P1UKLive
 Scenario:Verify remove link displays and user is able to remove particular product from cart
 When I navigate to customised product
 And I click on Personalize button
@@ -100,7 +100,7 @@ Then Coupon code gets applied
 When I click on Remove link to remove coupon code
 Then coupon code applied is removed
 
-@Cart @P1 @P1US
+@Cart @P1 @P1US  @P1UKLive
 Scenario:Verify error messeges displays if user enters wrong/invalid coupon code 
 When I navigate to customised product
 And I click on Personalize button
@@ -110,7 +110,7 @@ Then I click on Add to Cart button
 When I enter invalid coupon Code
 Then it displays appropriate error message
 
-@Cart @P1 @P1US
+@Cart @P1 @P1US  @P1UKLive
 Scenario:Validate checkout button is working and redirect user to Checkout screen
 When I navigate to customised product
 And I click on Personalize button
@@ -120,7 +120,7 @@ Then I click on Add to Cart button
 When I click on Checkout button
 Then it redirects to Checkout Page
 
-@Cart @P1 @P1US
+@Cart @P1 @P1US  @P1UKLive
 Scenario:Validate continue shopping button is working fine
 When I navigate to customised product
 And I click on Personalize button

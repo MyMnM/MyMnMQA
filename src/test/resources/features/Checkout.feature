@@ -9,26 +9,26 @@ When I click on cart button
 When I click on Proceed to Checkout button
 Then it redirects to Checkout Page
 
-@Checkout @P1 @P1US
+@Checkout @P1 @P1US  @P1UKLive
 Scenario:Verify Login link is there if User continue as a guest
 Then Login link is present there
 
-@Checkout @P1 @P1US
+@Checkout @P1 @P1US  @P1UKLive
 Scenario:Verify in ship to section error message is coming if user tries to proceed with empty fields
 When I click on Next button in Ship To section with all fields empty
 Then it displays all error messages
 
-@Checkout @P1 @P1US
+@Checkout @P1 @P1US  @P1UKLive
 Scenario:Verify validation message displays for invalid zip code
 When I enter invalid zip code
 Then it displays zip code error Message
 
-@Checkout @P1 @P1US
+@Checkout @P1 @P1US  @P1UKLive
 Scenario:Verify validation message displays if user enters invalid VAT number and ein id - For UK Site and US site
 When I enter invalid VatId
 Then it displays vatId error message
 
-@Checkout @P1 @P1US
+@Checkout @P1 @P1US  @P1UKLive
 Scenario Outline:Verify dropdown with save address displays and is clickable - For registered user
 When I click on Sign in link
 And I enter username as "<email>" and password as "<password>"
@@ -46,7 +46,7 @@ When I click on Edit link
 And I change the arrival date
 Then changed date is displayed in Ship Method section
 
-@Checkout @P1 @P1US
+@Checkout @P1 @P1US  @P1UKLive
 Scenario:Verify validation message displays for empty fields/invalid values for payment section
 When I enter all the mandatory fields of Ship to Section
 And I click on Next
@@ -55,7 +55,7 @@ When I click on Payment Next button with all fields empty
 Then it displays error messages for all the payment fields
 
 
-@Checkout @P1 @P1US
+@Checkout @P1 @P1US  @P1UKLive
 Scenario:Verify user is able to proceed further on entering valid payment details
 When I enter all the mandatory fields of Ship to Section
 And I click on Next
@@ -71,7 +71,7 @@ And I click on Ship method Next button
 When I click on save credit card information checkbox
 Then it gets selected
 
-@Checkout @P1 @P1US
+@Checkout @P1 @P1US  @P1UKLive
 Scenario:Verify user is able to check shipping address as billing address
 When I enter all the mandatory fields of Ship to Section
 And I click on Next
@@ -79,7 +79,7 @@ And I click on Ship method Next button
 When I click on Billing Address Same as Shipping
 Then it is selected
 
-@Checkout @P1 @P1US
+@Checkout @P1 @P1US  @P1UKLive
 Scenario:Verify user can add new billing address
 When I enter all the mandatory fields of Ship to Section
 And I click on Next
@@ -88,14 +88,14 @@ When I enter the new biiling address
 When I enter all the mandatory valid information and click on Next button
 Then new Biling address is added
 
-@Checkout @P1 @P1US
+@Checkout @P1 @P1US  @P1UKLive
 Scenario:Verify Subscribe option is there 
 When I enter all the mandatory fields of Ship to Section
 And I click on Next
 And I click on Ship method Next button
 Then Subscribe option is present there
 
-@Checkout @P1 @P1US
+@Checkout @P1 @P1US  @P1UKLive
 Scenario:Validate order summary section contain Product image and Product name with item code and quantity,Price per item etc
 When I enter all the mandatory fields of Ship to Section
 And I click on Next

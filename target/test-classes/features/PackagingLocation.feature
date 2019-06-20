@@ -4,7 +4,7 @@ Background:
 Given I open the given website
 Then verify the Url
 
-@PackagingLocation @P1
+@PackagingLocation @P1  @P1UKLive
 Scenario:Verify two products with different packaging location  doesnot gets added to cart
 When I navigate to first different location product
 Then Add to cart button is visible
@@ -15,7 +15,7 @@ Then Add to cart button is visible
 When I click on it
 Then it does not get added to Cart and displays Error message
 
-@PackagingLocation @P1
+@PackagingLocation @P1  @P1UKLive
 Scenario:Verify two products with same packaging location gets added to cart
 When I navigate to normal product page
 Then Add to cart button is visible
