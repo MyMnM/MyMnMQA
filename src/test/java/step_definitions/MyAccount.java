@@ -149,7 +149,9 @@ public class MyAccount extends GlobalUtil{
 		inputText(CheckoutOR.addressLine1, addressLine1, driver);
 		SelectUsingIndex(MyAccountOR.countryDropSown, 1);
 		inputText(CheckoutOR.cityField, city, driver);
+		executionDelay(4000);
 		inputText(CheckoutOR.zipCodeField, zipCode, driver);
+		executionDelay(4000);
 		inputText(CheckoutOR.phoneNumber, phoneNumber, driver);
 	}
 

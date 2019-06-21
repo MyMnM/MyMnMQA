@@ -41,10 +41,9 @@ public class QuickShop extends GlobalUtil{
 
 	
 	@When("^I click on Quick Shop button$")
-	public void i_click_on_Quick_Shop_button() throws Throwable {
-		
-		ProductListAction.hoverMouse(productListOR.productNameLink, driver);
-		executionDelay(8000);
+	public void i_click_on_Quick_Shop_button() throws Throwable {		
+		ProductListAction.hoverMouse(productListOR.productImageLink, driver);
+		executionDelay(5000);
 		clickOnElementUsingJS(driver, productListOR.quickShopButton);
 	}
 

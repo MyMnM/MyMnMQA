@@ -321,8 +321,8 @@ public class GlobalUtil {
 		return element.getText();
 	}
 	
-	public static void hoverMouse(WebElement element,WebDriver driver) {
-		highlight(element, driver);
+	public static void hoverMouse(WebElement element,WebDriver driver) throws InterruptedException {
+		highlight(element, driver);		
 		Actions action = new Actions(driver);
 		action.moveToElement(element).build().perform();
 		

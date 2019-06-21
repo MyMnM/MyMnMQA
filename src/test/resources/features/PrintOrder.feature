@@ -1,6 +1,6 @@
 
 Feature: Verify multiple scenarios on Print order Page
-@PrintOrder @P1  @P1UKLive
+@PrintOrder @P1
 Scenario:Verify print icon is present on the right side corner of the order confirmation page and is clikable
 Given I open the given website
 Then verify the Url
