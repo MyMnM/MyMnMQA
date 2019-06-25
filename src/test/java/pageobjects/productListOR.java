@@ -40,7 +40,7 @@ public class productListOR {
 	
 	
 	@FindBy(how=How.XPATH, using=productImage)
-	@CacheLookup
+	
 	public static WebElement productImageLink;
 	
 	@FindBy(how=How.XPATH, using=productName)

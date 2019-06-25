@@ -128,8 +128,18 @@ public class Checkout extends GlobalUtil{
 	
 	@Then("^dropdown with save address displays$")
 	public void dropdown_with_save_address_displays() throws Throwable {
-		Assert.assertTrue("VatId error message is not displayed" ,isWebElementPresent(driver, CheckoutOR.checkoutSavedAddressDropDown));
-		clickOnElementUsingJS(driver, CheckoutOR.savedAddressDropDown);		
+		/*Assert.assertTrue("VatId error message is not displayed" ,isWebElementPresent(driver, CheckoutOR.checkoutSavedAddressDropDown));
+		clickOnElementUsingJS(driver, CheckoutOR.savedAddressDropDown);		*/
+		if(isWebElementPresent(driver, CheckoutOR.checkoutSavedAddressDropDown)) {	
+			Assert.assertTrue("VatId error message is not displayed" ,isWebElementPresent(driver, CheckoutOR.checkoutSavedAddressDropDown));
+			clickOnElementUsingJS(driver, CheckoutOR.savedAddressDropDown);	
+		}
+		else {
+			System.out.println("in else");
+			clickOnElementUsingJS(driver, CartOR.checkoutButton);	
+			Assert.assertTrue("VatId error message is not displayed" ,isWebElementPresent(driver, CheckoutOR.checkoutSavedAddressDropDown));
+			clickOnElementUsingJS(driver, CheckoutOR.savedAddressDropDown);
+		}
 	}
 	
 	@When("^I enter all the mandatory fields of Ship to Section$")

@@ -11,7 +11,7 @@ public class LoginSignUpOR {
 	public final static String signUpPassword = "(//input[@type='password'])[2]";
 	public final static String signUpReEnterPassword = "//input[@placeholder='Re-enter Password']";
 	public final static String passwordErrorMessage = "//span[contains(text(),'Passwords did not match. Please re-enter.')]";
-	public final static String existingUserErrorMessage = "//span[contains(text(),'EmailAddress already associated with a login')]";
+	public final static String existingUserErrorMessage = "//span[contains(text(),'Email address already associated with a login')]";
 	
 	@FindBy(how=How.XPATH, using=signUpErrorMessage)
 	@CacheLookup
