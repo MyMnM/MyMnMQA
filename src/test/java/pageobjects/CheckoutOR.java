@@ -31,24 +31,24 @@ public class CheckoutOR {
 	//public final static String checkoutVatId = "//input[@name='orderattr_vatId']";
 	public final static String checkoutVatId = "//input[contains(@name,'orderattr')]";
 	public final static String checkoutSavedAddressDropDown = "//select[@id='mz--contactselector-savedcontact']";
-	//public final static String shipToNext = "(//button[contains(text(),'Next')])[1]";
-	public final static String shipToNext = "(//button[contains(text(),'Next')])[2]";
+	public final static String shipToNext = "(//button[contains(text(),'Next')])[1]";
+	//public final static String shipToNext = "(//button[contains(text(),'Next')])[2]";
 	public final static String shipToNext_France = "(//button[contains(text(),'Suivant')])[1]";
 	public final static String shipToNext_Dutch = "(//button[contains(text(),'Volgende')])[1]";
 	public final static String shipToNext_German = "(//button[contains(text(),'Weiter')])[1]";
 	public final static String shipToNext_Italy = "(//button[contains(text(),'Seguente')])[1]";
 	public final static String shipToNext_Spain = "(//button[contains(text(),'Siguiente')])[1]";
 	
-	//public final static String shipMethodNext = "(//button[contains(text(),'Next')])[2]";
-	public final static String shipMethodNext = "(//button[contains(text(),'Next')])[3]";
+	public final static String shipMethodNext = "(//button[contains(text(),'Next')])[2]";
+	//public final static String shipMethodNext = "(//button[contains(text(),'Next')])[3]";
 	public final static String shipMethodNext_France = "(//button[contains(text(),'Suivant')])[2]";
 	public final static String shipMethodNext_Dutch = "(//button[contains(text(),'Volgende')])[2]";
 	public final static String shipMethodNext_German = "(//button[contains(text(),'Weiter')])[2]";
 	public final static String shipMethodNext_Italy = "(//button[contains(text(),'Seguente')])[2]";
 	public final static String shipMethodNext_Spain = "(//button[contains(text(),'Siguiente')])[2]";
 	
-	//public final static String paymentNext = "(//button[contains(text(),'Next')])[3]";
-	public final static String paymentNext = "(//button[contains(text(),'Next')])[4]";
+	public final static String paymentNext = "(//button[contains(text(),'Next')])[3]";
+	//public final static String paymentNext = "(//button[contains(text(),'Next')])[4]";
 	public final static String paymentNext_France = "(//button[contains(text(),'Suivant')])[3]";
 	public final static String paymentNext_Dutch = "(//button[contains(text(),'Volgende')])[3]";
 	public final static String paymentNext_German = "(//button[contains(text(),'Weiter')])[3]";
